@@ -2,20 +2,42 @@
 body{
     font-family: 'Fuzzy Bubbles', cursive;
     background-color: #141515;
+    text-align: center;
 }
 
 h1{
+    color: rgb(224, 224, 224);
+    font-size: 3em;
+}
+
+/*Font Awesome icons */
+.game-weapons > i{
+    padding: 50px;
+}
+
+#rock{
     color: #E73651;
 }
 
+#paper{
+    color: #FEEA00;
+}
+
+#scissors{
+color: #41EAD4;
+}
+
 h2{
-    color: #41EAD4;
+    color: rgb(224, 224, 224);
 }
 
-p{
-    color: #FEEA00
+.username-box{
+    font-size: 1em;
 }
 
-.game-weapons > i{
-
+.lets-play{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 4em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
