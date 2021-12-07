@@ -1,0 +1,21 @@
+/*GLobal Style*/
+body{
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-color: #141515;
+}
+
+h1{
+    color: #E73651;
+}
+
+h2{
+    color: #41EAD4;
+}
+
+p{
+    color: #FEEA00
+}
+
+.game-weapons > i{
+
+}
