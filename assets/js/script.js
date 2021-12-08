@@ -1,7 +1,7 @@
 /*Caching the dom*/
 
-const userScore = 0;
-const computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".scoreboard");
@@ -18,11 +18,66 @@ function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
+/**
+ * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
+ * scoreboard and logs it to the console.
+ */
+function win(user, computer){
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    console.log("win");
+    console.log(user);
+    console.log(computer);
+}
+/**
+ * This function executes when you lose. It adds 1 to the computer score. Displays +1 to the computer score on the 
+ * scoreboard and logs it to the console.
+ */
+function lose(){
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    console.log("lose");
+    console.log(user);
+    console.log(computer);
+}
+/**
+ * This function executes 
+ */
+function draw(){
+    console.log("draw");
+    console.log(user);
+    console.log(computer);
+}
+        
 
 
 
+/**
+ * 
+ * define a switch case to determine the result of the game, and determine
+ * which functiom should be called. 
+ */
 function game(userChoice){
     const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice){
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            win(user, computer);
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            lose(user, computer);
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+            draw(user, computer);
+            break;            
+    }
 }
 
 
@@ -41,3 +96,5 @@ scissors_div.addEventListener('click', function(){
 })
 }
  main();
+
+
