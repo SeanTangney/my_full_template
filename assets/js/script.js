@@ -2,6 +2,7 @@
 
 let userScore = 0;
 let computerScore = 0;
+let gameIsOver = false;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".scoreboard");
@@ -44,14 +45,22 @@ function lose(userChoice, computerChoice){
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
 }
 /**
- * This function executes 
+ * This function executes to tell the user that round was a draw
  */
 function draw(userChoice, computerChoice){
     console.log("draw");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " was chosen by both, DRAW";
 }
+    
+    if (userScore === 5){
+        computerScore_span.innerHTML = computerScore;
+        result_text.innerHTML = "CONGRATULATIONS, You have won!";
         
+        } else if (computerScore === 5){
+            computerScore_span.innerHTML = computerScore;
+            result_text.innerHTML = "Better luck next time!"; 
+        }
 
 
 
