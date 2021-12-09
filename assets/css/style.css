@@ -13,12 +13,12 @@ h1{
 /*Font Awesome icons */
 
 .computer-weapons > i{
-    padding: 50px;
+    padding: 40px;
 }
 
 .computer-weapons > div{
     display: inline-block;
-    padding: 50px;
+    padding: 40px;
 } 
 
 .game-weapons > i{
@@ -28,6 +28,18 @@ h1{
 .game-weapons > div{
     display: inline-block;
     padding: 50px;
+}
+
+#comp-r{
+    color: #E73651;
+}
+
+#comp-p{
+    color: #FEEA00;
+}
+
+#comp-s{
+color: #41EAD4;
 }
 
 #rock{
@@ -41,6 +53,36 @@ h1{
 #scissors{
 color: #41EAD4;
 }
+
+#rock:hover{
+    color: #fff;
+    text-shadow:
+    0 0 7px #E73651,
+    0 0 10px #E73651,
+    0 0 21px #E73651,
+    0 0 42px #E73651,
+    0 0 82px #E73651;
+}
+
+#paper:hover{
+    color: #fff;
+    text-shadow:
+    0 0 7px #FEEA00,
+    0 0 10px #FEEA00,
+    0 0 21px #FEEA00,
+    0 0 42px #FEEA00,
+    0 0 82px #FEEA00;
+}
+
+#scissors:hover{
+    color: #fff;
+    text-shadow:
+    0 0 7px #41EAD4,
+    0 0 10px #41EAD4,
+    0 0 21px #41EAD4,
+    0 0 42px #41EAD4,
+    0 0 82px #41EAD4;
+    }
 
 h2{
     color: rgb(224, 224, 224);
