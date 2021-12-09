@@ -12,6 +12,15 @@ h1{
 
 /*Font Awesome icons */
 
+.computer-weapons > i{
+    padding: 50px;
+}
+
+.computer-weapons > div{
+    display: inline-block;
+    padding: 50px;
+} 
+
 .game-weapons > i{
     padding: 50px;
 }
