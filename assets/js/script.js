@@ -25,15 +25,16 @@ function getComputerChoice(userChoice, computerChoice) {
  * scoreboard and logs it to the console.
  */
 function win(userChoice, computerChoice){
-    if(userScore !== 5){
+    if(userScore !== 5 && computerScore !==5){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     console.log("win");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " beats " + computerChoice;
-    } else {
-        return;
+    } else if(userScore === 5 && computerScore !==5){
+       console.log("user won the game")
+       result_text.innerHTML = "Congratulations, You WIN!";
     }
 }
 /**
@@ -41,15 +42,16 @@ function win(userChoice, computerChoice){
  * scoreboard and logs it to the console.
  */
 function lose(userChoice, computerChoice){
-    if(computerScore !== 5) {
+    if(computerScore !== 5 && userScore !== 5) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     console.log("lose");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
-    } else{
-        return;
+    } else if (computerScore === 5 && userScore !== 5){
+       console.log("Computer won the game")
+       result_text.innerHTML = "Better Luck Next Time!";
     }
 }
 /**
@@ -60,23 +62,18 @@ function draw(userChoice, computerChoice){
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " was chosen by both, DRAW";
 }
+
+
 /*Finishing the game when 5 is reached by the user or computer*/
+
 function gameWin(){
     result_text.innerHTML = "Congratulations, You have WON!";
     console.log("Game over, user won");
 }
 
-function gameLoss(){
-    result_text.innerHTML = "Better luck next time!";
-    console.log("Game over, user lost");
+function gameOver(){
+    
 }
-
-if(userScore === 5) gameWin();
-    
-if(computerScore === 5) gameLoss();
-    
-
-
 
 
 /**
