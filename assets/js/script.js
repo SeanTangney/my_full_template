@@ -2,7 +2,6 @@
 
 let userScore = 0;
 let computerScore = 0;
-let gameIsOver = false;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".scoreboard");
@@ -19,30 +18,39 @@ function getComputerChoice(userChoice, computerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
+
 }
 /**
  * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
  * scoreboard and logs it to the console.
  */
 function win(userChoice, computerChoice){
+    if(userScore !== 5){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     console.log("win");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " beats " + computerChoice;
+    } else {
+        return;
+    }
 }
 /**
  * This function executes when you lose. It adds 1 to the computer score. Displays +1 to the computer score on the 
  * scoreboard and logs it to the console.
  */
 function lose(userChoice, computerChoice){
+    if(computerScore !== 5) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     console.log("lose");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
+    } else{
+        return;
+    }
 }
 /**
  * This function executes to tell the user that round was a draw
@@ -52,15 +60,22 @@ function draw(userChoice, computerChoice){
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " was chosen by both, DRAW";
 }
+/*Finishing the game when 5 is reached by the user or computer*/
+function gameWin(){
+    result_text.innerHTML = "Congratulations, You have WON!";
+    console.log("Game over, user won");
+}
+
+function gameLoss(){
+    result_text.innerHTML = "Better luck next time!";
+    console.log("Game over, user lost");
+}
+
+if(userScore === 5) gameWin();
     
-    if (userScore === 5){
-        computerScore_span.innerHTML = computerScore;
-        result_text.innerHTML = "CONGRATULATIONS, You have won!";
-        
-        } else if (computerScore === 5){
-            computerScore_span.innerHTML = computerScore;
-            result_text.innerHTML = "Better luck next time!"; 
-        }
+if(computerScore === 5) gameLoss();
+    
+
 
 
 
@@ -104,6 +119,7 @@ paper_div.addEventListener('click', function(){
 scissors_div.addEventListener('click', function(){
     game("scissors");
 })
+
 }
  main();
 
