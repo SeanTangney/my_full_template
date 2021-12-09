@@ -12,23 +12,15 @@ h1{
 
 /*Font Awesome icons */
 
+/*Computer weapons*/
 .computer-weapons > i{
-    padding: 40px;
+    padding: 25px;
 }
 
 .computer-weapons > div{
     display: inline-block;
-    padding: 40px;
+    padding: 15px;
 } 
-
-.game-weapons > i{
-    padding: 50px;
-}
-
-.game-weapons > div{
-    display: inline-block;
-    padding: 50px;
-}
 
 #comp-r{
     color: #E73651;
@@ -40,6 +32,16 @@ h1{
 
 #comp-s{
 color: #41EAD4;
+}
+
+/*user weapons*/
+.game-weapons > i{
+    padding: 50px;
+}
+
+.game-weapons > div{
+    display: inline-block;
+    padding: 50px;
 }
 
 #rock{
@@ -83,15 +85,18 @@ color: #41EAD4;
     0 0 42px #41EAD4,
     0 0 82px #41EAD4;
     }
-
+/*Result box*/
 h2{
     color: rgb(224, 224, 224);
+    padding-top: 40px;
 }
+
 
 .username-box{
     font-size: 1em;
 }
 
+/*Play button*/
 .lets-play{
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 4em;
@@ -99,6 +104,7 @@ h2{
     margin: 0.5em;
 }
 
+/*Scoreboard*/
 .scoreboard{
     border: 3px solid #eb8493;
     border-radius: 4px;
