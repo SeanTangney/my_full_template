@@ -112,6 +112,22 @@ h2{
     color: rgb(224, 224, 224);
     padding-top: 40px;
 }
+#aim{
+    color: rgb(224, 224, 224);
+    padding-top: 35px;
+    display:inline-block;
+}
+#reset {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2.5em;
+    color: rgb(19, 20, 20);
+    padding: 2px;
+    margin-top: 35px;
+    display: none;
+    border: 1px solid #141515;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
+}
 
 
 .username-box{

@@ -10,7 +10,7 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const result_text = document.querySelector(".result-text");
-
+const gameReset = document.getElementById("reset");
 /**
  * Generate random number to to give us a random element from the array
  */
@@ -35,6 +35,7 @@ function win(userChoice, computerChoice){
     } else if(userScore === 5 && computerScore !==5){
        console.log("user won the game")
        result_text.innerHTML = "Congratulations, You WIN!";
+       restart();
     }
 }
 /**
@@ -52,6 +53,7 @@ function lose(userChoice, computerChoice){
     } else if (computerScore === 5 && userScore !== 5){
        console.log("Computer won the game")
        result_text.innerHTML = "Better Luck Next Time!";
+       restart();
     }
 }
 /**
@@ -64,16 +66,39 @@ function draw(userChoice, computerChoice){
 }
 
 
-/*Finishing the game when 5 is reached by the user or computer*/
+/**
+ * Finishing the game when 5 is reached by the user or computer
+ */
 
 function gameWin(){
     result_text.innerHTML = "Congratulations, You have WON!";
     console.log("Game over, user won");
 }
 
-function gameOver(){
+function restart(){
+    rock_div.removeEventListener('click', function(){
+        game("rock");
+    })
+    paper_div.removeEventListener('click', function(){
+        game("paper");
+    })
+    scissors_div.removeEventListener('click', function(){
+        game("scissors");
+    })
+
+    let aim = document.getElementById("aim");
+    let reset = document.getElementById("reset");
+
+    aim.style["display"] = "none";
+    reset.style["display"] = "inline-block";  
+
+}
+
+function reset(){
     
 }
+
+
 
 
 /**
