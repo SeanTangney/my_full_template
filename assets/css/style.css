@@ -129,6 +129,11 @@ h2{
     background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
 }
 
+#reset:hover{
+    box-shadow: outset 0 0 12px 12px #fff, inset 0 0 3px 2px #fff;
+    background: linear-gradient(to right, #E73651,#E73651,#FEEA00,#FEEA00,#41EAD4,#41EAD4);
+
+}
 
 .username-box{
     font-size: 1em;

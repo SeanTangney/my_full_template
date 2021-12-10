@@ -32,7 +32,7 @@ function win(userChoice, computerChoice){
     console.log("win");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " beats " + computerChoice;
-    } else if(userScore === 5 && computerScore !==5){
+    } else if(userScore == 5 && computerScore !==5){
        console.log("user won the game")
        result_text.innerHTML = "Congratulations, You WIN!";
        restart();
@@ -50,7 +50,7 @@ function lose(userChoice, computerChoice){
     console.log("lose");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
-    } else if (computerScore === 5 && userScore !== 5){
+    } else if (computerScore == 5 && userScore !== 5){
        console.log("Computer won the game")
        result_text.innerHTML = "Better Luck Next Time!";
        restart();
@@ -93,12 +93,6 @@ function restart(){
     reset.style["display"] = "inline-block";  
 
 }
-
-function reset(){
-    
-}
-
-
 
 
 /**
