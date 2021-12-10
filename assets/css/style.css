@@ -5,6 +5,14 @@ body{
     text-align: center;
 }
 
+h1{
+    color: rgb(224, 224, 224);
+    font-size: 3em;
+}
+
+header{
+
+}
 #heading{
     color: rgb(224, 224, 224);
     font-size: 2em;
@@ -13,6 +21,16 @@ body{
 
 
 /*Font Awesome icons */
+
+#home-button:hover{
+   border-bottom: 2px solid #fff;
+   text-shadow:
+    0 0 3px #E73651,
+    0 0 6px #FEEA00,
+    0 0 10px #41EAD4,
+    0 0 14px #E73651,
+    0 0 20px #FEEA00;
+}
 
 #robot{
     color:slategray;
@@ -51,15 +69,15 @@ color: #41EAD4;
     padding: 50px;
 }
 
-#rock{
+#rock, #h-rock{
     color: #E73651;
 }
 
-#paper{
+#paper, #h-paper{
     color: #FEEA00;
 }
 
-#scissors{
+#scissors, #h-scissors{
 color: #41EAD4;
 }
 
@@ -106,9 +124,19 @@ h2{
 /*Play button*/
 .lets-play{
     font-family: 'Fuzzy Bubbles', cursive;
+    background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
     font-size: 4em;
+    color: rgb(38, 44, 49);
     padding: 0.5em;
+    border: 1px solid #141515;
     margin: 0.5em;
+    border-radius: 50px;
+}
+
+.lets-play:hover{
+    box-shadow: outset 0 0 12px 12px #fff, inset 0 0 3px 2px #fff;
+    background: linear-gradient(to right, #E73651,#E73651,#FEEA00,#FEEA00,#41EAD4,#41EAD4);
+
 }
 
 /*Scoreboard*/
