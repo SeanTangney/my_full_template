@@ -5,12 +5,19 @@ body{
     text-align: center;
 }
 
-h1{
+#heading{
     color: rgb(224, 224, 224);
-    font-size: 3em;
+    font-size: 2em;
+    text-align: left;
 }
 
+
 /*Font Awesome icons */
+
+#robot{
+    color:slategray;
+    padding-bottom: 20px;
+}
 
 /*Computer weapons*/
 .computer-weapons > i{
