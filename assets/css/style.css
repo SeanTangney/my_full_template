@@ -10,9 +10,6 @@ h1{
     font-size: 3em;
 }
 
-header{
-
-}
 #heading{
     color: rgb(224, 224, 224);
     font-size: 2em;
@@ -173,8 +170,15 @@ h2{
     right: -25px;
 }
 
+/*Mouse animation https://codepen.io/morphed/pen/LZWppE*/
 
-
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 15px;
+}
 
 
 
