@@ -148,6 +148,7 @@ h2{
 
 #username-box{
     font-size: 1em;
+    margin-top: 15px;
 }
 input[type=text]{
     background-color: #141515;
@@ -155,7 +156,7 @@ input[type=text]{
 }
 
 /*Play button*/
-.lets-play{
+#lets-play{
     font-family: 'Fuzzy Bubbles', cursive;
     background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
     font-size: 4em;
@@ -166,7 +167,7 @@ input[type=text]{
     border-radius: 50px;
 }
 
-.lets-play:hover{
+#lets-play:hover{
     box-shadow: outset 0 0 12px 12px #fff, inset 0 0 3px 2px #fff;
     background: linear-gradient(to right, #E73651,#E73651,#FEEA00,#FEEA00,#41EAD4,#41EAD4);
 

@@ -11,6 +11,12 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const result_text = document.querySelector(".result-text");
 const gameReset = document.getElementById("reset");
+const nameBadge = document.getElementById("user-label");
+const play = document.getElementById("lets-play");
+
+
+
+
 /**
  * Generate random number to to give us a random element from the array
  */
@@ -71,6 +77,7 @@ function draw(userChoice, computerChoice){
 }
 }
 
+
 /**
  * Finishing the game when 5 is reached by the user or computer
  */
@@ -127,6 +134,7 @@ function game(userChoice){
 }
 
 
+
 /**
  * Event listeners to determine the users choice ( rock, paper or scissors)
  */
@@ -144,17 +152,20 @@ scissors_div.addEventListener('click', function(){
 }
  main();
 
-
- var showName = document.getElementById('chosen-name');
- var name = document.getElementsByClassName('username-input');
- const nextPage = document.getElementById('lets-play');
- 
+/**
+ * Function directs you to game page when lets play is clicked on the index,
+ * Inputted username is displayed on scoreboard
+ */
  function displayName(){
-    nextPage.addEventListener("click", displayName);
-    showName.innerHTML = name.value;
+    let chosenName = document.getElementById("username-box").value;
+    localStorage.setItem("username", chosenName);
+    console.log(chosenName);
+    window.location = "game.html";   
 }
 
-
+function getName(){
+    nameBadge.innerHTML = localStorage.getItem("username");
+}
 
  // Mouse animation https://codepen.io/morphed/pen/LZWppE
 
