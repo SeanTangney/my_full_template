@@ -1,10 +1,18 @@
 /*GLobal Style*/
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 body{
     font-family: 'Fuzzy Bubbles', cursive;
     background-color: #141515;
     text-align: center;
 }
 
+
+
+/*Header*/
 h1{
     color: rgb(224, 224, 224);
     font-size: 3em;
@@ -31,17 +39,18 @@ h1{
 
 #robot{
     color:slategray;
-    padding-bottom: 20px;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 /*Computer weapons*/
 .computer-weapons > i{
-    padding: 25px;
+    padding: 20px;
 }
 
 .computer-weapons > div{
     display: inline-block;
-    padding: 15px;
+    padding:10px 15px;
 } 
 
 #comp-r{
@@ -110,11 +119,13 @@ color: #41EAD4;
 /*Result box*/
 h2{
     color: rgb(224, 224, 224);
-    padding-top: 40px;
+    margin:  0;
+    padding-top: 25px;
 }
 #aim{
     color: rgb(224, 224, 224);
-    padding-top: 35px;
+    padding:25px 0;
+    margin: 0;
     display:inline-block;
 }
 #reset {
@@ -122,7 +133,7 @@ h2{
     font-size: 2.5em;
     color: rgb(19, 20, 20);
     padding: 2px;
-    margin-top: 35px;
+    margin-top: 20px;
     display: none;
     border: 1px solid #141515;
     border-radius: 10px;
@@ -135,8 +146,12 @@ h2{
 
 }
 
-.username-box{
+#username-box{
     font-size: 1em;
+}
+input[type=text]{
+    background-color: #141515;
+    color: #fff;
 }
 
 /*Play button*/
@@ -177,6 +192,12 @@ h2{
     color: rgb(224, 224, 224);
     font-size: 14px;
     padding: 2px 10px;
+}
+#computer-score{
+    padding-left: 10px;
+}
+#user-score{
+    padding-right: 10px;
 }
 
 #user-label{

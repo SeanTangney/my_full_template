@@ -33,9 +33,10 @@ function win(userChoice, computerChoice){
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " beats " + computerChoice;
     } else if(userScore == 5 && computerScore !==5){
-       console.log("user won the game")
+       console.log("user won the game");
        result_text.innerHTML = "Congratulations, You WIN!";
        restart();
+       return;
     }
 }
 /**
@@ -51,20 +52,24 @@ function lose(userChoice, computerChoice){
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
     } else if (computerScore == 5 && userScore !== 5){
-       console.log("Computer won the game")
+       console.log("Computer won the game");
        result_text.innerHTML = "Better Luck Next Time!";
        restart();
+       return;
     }
 }
 /**
  * This function executes to tell the user that round was a draw
  */
 function draw(userChoice, computerChoice){
+    if(computerScore !== 5 && userScore !== 5){
     console.log("draw");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " was chosen by both, DRAW";
+} else if (computerScore === 5 || userScore === 5){
+    restart();
 }
-
+}
 
 /**
  * Finishing the game when 5 is reached by the user or computer
@@ -138,6 +143,18 @@ scissors_div.addEventListener('click', function(){
 
 }
  main();
+
+
+ var showName = document.getElementById('chosen-name');
+ var name = document.getElementsByClassName('username-input');
+ const nextPage = document.getElementById('lets-play');
+ 
+ function displayName(){
+    nextPage.addEventListener("click", displayName);
+    showName.innerHTML = name.value;
+}
+
+
 
  // Mouse animation https://codepen.io/morphed/pen/LZWppE
 
