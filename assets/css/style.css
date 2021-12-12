@@ -38,7 +38,7 @@ h1{
 }
 
 #robot{
-    color:slategray;
+    color:rgb(87, 143, 199);
     margin: 0;
     padding-bottom: 10px;
 }
@@ -54,15 +54,15 @@ h1{
 } 
 
 #comp-r{
-    color: #E73651;
+    color: slategray;
 }
 
 #comp-p{
-    color: #FEEA00;
+    color: slategray;
 }
 
 #comp-s{
-color: #41EAD4;
+color: slategray;
 }
 
 /*user weapons*/

@@ -13,19 +13,43 @@ const result_text = document.querySelector(".result-text");
 const gameReset = document.getElementById("reset");
 const nameBadge = document.getElementById("user-label");
 const play = document.getElementById("lets-play");
-
-
-
+const comp_r = document.getElementById("comp-r");
+const comp_p = document.getElementById("comp-p");
+const comp_s = document.getElementById("comp-s");
 
 /**
- * Generate random number to to give us a random element from the array
+ * Generate random number to to give us a random element from the array,
+ * change color of computer wepons to show which one was chosen
  */
 function getComputerChoice(userChoice, computerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
+    if(randomNumber == 0){
+       comp_r.style["color"] = "#E73651";
+       rockBack();
+    } else if(randomNumber == 1){
+        comp_p.style["color"] = "#FEEA00";
+        rockBack();
+    } else {
+        comp_s.style["color"] = "#41EAD4";
+        rockBack();
+    }
     return choices[randomNumber];
-
 }
+
+/**
+ * Change back colour of computer chosen weapon to default after 2 seconds
+ */
+function rockBack() {
+    setTimeout(function(){ 
+        comp_r.style["color"] = "slategray"; 
+        comp_p.style["color"] = "slategray";
+        comp_s.style["color"] = "slategray";
+    }, 2000);
+  }
+
+
+
 /**
  * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
  * scoreboard and logs it to the console.
