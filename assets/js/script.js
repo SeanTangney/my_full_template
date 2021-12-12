@@ -156,16 +156,26 @@ scissors_div.addEventListener('click', function(){
  * Function directs you to game page when lets play is clicked on the index,
  * Inputted username is displayed on scoreboard
  */
+
+ 
+
  function displayName(){
+        if (document.getElementById("username-box").value == "") {
+            let chosenName = document.getElementById("username-box");
+            chosenName.style["border"] = "2px solid red";
+        } else {
     let chosenName = document.getElementById("username-box").value;
     localStorage.setItem("username", chosenName);
     console.log(chosenName);
     window.location = "game.html";   
+    }
 }
 
 function getName(){
     nameBadge.innerHTML = localStorage.getItem("username");
 }
+
+
 
  // Mouse animation https://codepen.io/morphed/pen/LZWppE
 

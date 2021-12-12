@@ -149,9 +149,13 @@ h2{
 #username-box{
     font-size: 1em;
     margin-top: 15px;
-}
-input[type=text]{
+    padding: 2px;
+    border:2px solid rgb(87, 87, 87);
+    border-radius: 3px;
     background-color: #141515;
+}
+
+input[type=text]{
     color: #fff;
 }
 
