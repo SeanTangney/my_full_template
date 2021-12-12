@@ -259,7 +259,7 @@ input[type=text]{
 }
 #h-rock, #h-paper, #h-scissors{
     padding: 25px;
-    font-size:9.5em;;
+    font-size:9.5em;
 } 
 #lets-play{
     font-size: 3em;
@@ -316,7 +316,7 @@ input[type=text]{
     }
     #h-rock, #h-paper, #h-scissors{
         padding: 15px;
-        font-size:6em;;
+        font-size: 4em;;
     } 
     #lets-play{
         margin: 40px 0;
@@ -333,7 +333,25 @@ input[type=text]{
     #heading{
         font-size: 1.5em;
     }
+    .scoreboard{
+        font-size: 20px;
+        margin: 0 auto;
+        width: 150px;
+    }
+    #user-label{
+        position: absolute;
+        top: 18px;
+        left: -30px;
+    }
+    
+    #computer-label{
+        position: absolute;
+        top: 18px;
+        right: -33px;
+    }
+    
 }
+
 
 
 
