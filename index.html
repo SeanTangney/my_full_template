@@ -27,11 +27,12 @@
     </div>
     <form>
     <div class="username-input">
-        <input id="username-box" type="text" placeholder="Enter Username">
+        <label for="username-box"></label>
+        <input id="username-box" type="text" placeholder=" Enter Username" minlength="2" maxlength="6" required>
     </div>
 
     <div class="play-button">
-        <input id="lets-play" onclick="displayName()" type="button" value="LETS PLAY!" required>
+        <input id="lets-play" onclick="displayName()" type="button" value="LETS PLAY!" >
     </div>
     </form>
     <script src="assets/js/script.js"></script>
