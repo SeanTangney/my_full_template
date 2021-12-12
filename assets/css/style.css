@@ -264,6 +264,15 @@ input[type=text]{
 #lets-play{
     font-size: 3em;
 }
+#rock, #paper, #scissors{
+    font-size: 0.8em;
+    padding: 15px;
+    margin-top: 40px;
+}
+#comp-r, #comp-p, #comp-s{
+    padding: 10px;
+    font-size: 0.8em;
+}
 }
 
 @media screen and (max-width: 600px){
@@ -285,6 +294,15 @@ input[type=text]{
     #lets-play{
         font-size: 2em;
     }
+    #rock, #paper, #scissors{
+        font-size: 0.55em;
+        padding: 8px;
+        margin-top: 0;
+    }
+    #comp-r, #comp-p, #comp-s{
+        padding: 10px;
+        font-size: 0.7em;
+    }
 }
 
 
@@ -294,7 +312,7 @@ input[type=text]{
     }
     .game-weapons{
         width: 90%;
-        margin: 15% 5%;
+        margin: 8% 5%;
     }
     #h-rock, #h-paper, #h-scissors{
         padding: 15px;
@@ -302,6 +320,18 @@ input[type=text]{
     } 
     #lets-play{
         margin: 40px 0;
+    }
+    #rock, #paper, #scissors{
+        font-size: 0.5em;
+        padding: 10px;
+        margin-top: 0;
+    }
+    #comp-r, #comp-p, #comp-s{
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    #heading{
+        font-size: 1.5em;
     }
 }
 
