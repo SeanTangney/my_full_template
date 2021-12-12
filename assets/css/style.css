@@ -249,7 +249,61 @@ input[type=text]{
     z-index: -10;
 }
 
+/*Media queries*/
 
+@media screen and (max-width: 800px){
+
+.game-weapons{
+    width: 80%;
+    margin: 0 10%;
+}
+#h-rock, #h-paper, #h-scissors{
+    padding: 25px;
+    font-size:9.5em;;
+} 
+#lets-play{
+    font-size: 3em;
+}
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    h2{
+        margin: 40px 10px 20px 10px;
+    }
+    .game-weapons{
+        width: 80%;
+        margin: 0 10%;
+    }
+    #h-rock, #h-paper, #h-scissors{
+        padding: 15px;
+        font-size:8em;;
+    } 
+    #lets-play{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    h2{
+        font-size: 1em;
+    }
+    .game-weapons{
+        width: 90%;
+        margin: 15% 5%;
+    }
+    #h-rock, #h-paper, #h-scissors{
+        padding: 15px;
+        font-size:6em;;
+    } 
+    #lets-play{
+        margin: 40px 0;
+    }
+}
 
 
 
