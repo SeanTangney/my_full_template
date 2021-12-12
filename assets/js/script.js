@@ -16,6 +16,9 @@ const play = document.getElementById("lets-play");
 const comp_r = document.getElementById("comp-r");
 const comp_p = document.getElementById("comp-p");
 const comp_s = document.getElementById("comp-s");
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
 
 /**
  * Generate random number to to give us a random element from the array,
@@ -50,9 +53,9 @@ function rockBack() {
 
   function changeBack() {
     setTimeout(function(){ 
-        rock_div.style["text-shadow"] = "0"; 
-        paper_div.style["text-shadow"] = "0";
-        scissors_div.style["text-shadow"] = "0";
+        rock.style["text-shadow"] = "0"; 
+        paper.style["text-shadow"] = "0";
+        scissors.style["text-shadow"] = "0";
     }, 2000);
   }
   

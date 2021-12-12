@@ -93,14 +93,17 @@ color: slategray;
 
 #rock, #h-rock{
     color: #E73651;
+    text-shadow: 0;
 }
 
 #paper, #h-paper{
     color: #FEEA00;
+    text-shadow: 0;
 }
 
 #scissors, #h-scissors{
 color: #41EAD4;
+text-shadow: 0;
 }
 
 #rock:hover{
