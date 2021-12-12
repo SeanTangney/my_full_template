@@ -48,6 +48,15 @@ function rockBack() {
     }, 2000);
   }
 
+  function changeBack() {
+    setTimeout(function(){ 
+        rock_div.style["text-shadow"] = "0"; 
+        paper_div.style["text-shadow"] = "0";
+        scissors_div.style["text-shadow"] = "0";
+    }, 2000);
+  }
+  
+
 
 
 /**
@@ -114,12 +123,15 @@ function gameWin(){
 function restart(){
     rock_div.removeEventListener('click', function(){
         game("rock");
+        changeBack();
     })
     paper_div.removeEventListener('click', function(){
         game("paper");
+        changeBack();
     })
     scissors_div.removeEventListener('click', function(){
         game("scissors");
+        changeBack();
     })
 
     let aim = document.getElementById("aim");
