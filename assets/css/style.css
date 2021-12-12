@@ -325,6 +325,7 @@ input[type=text]{
     } 
     #lets-play{
         margin: 40px 0;
+        font-size: 1.5em;
     }
     #rock, #paper, #scissors{
         font-size: 0.5em;
