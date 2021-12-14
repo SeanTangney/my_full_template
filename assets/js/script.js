@@ -51,16 +51,6 @@ function rockBack() {
     }, 2000);
   }
 
-  function changeBack() {
-    setTimeout(function(){ 
-        rock.style["text-shadow"] = "0"; 
-        paper.style["text-shadow"] = "0";
-        scissors.style["text-shadow"] = "0";
-    }, 2000);
-  }
-  
-
-
 
 /**
  * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
@@ -126,15 +116,12 @@ function gameWin(){
 function restart(){
     rock_div.removeEventListener('click', function(){
         game("rock");
-        changeBack();
     })
     paper_div.removeEventListener('click', function(){
         game("paper");
-        changeBack();
     })
     scissors_div.removeEventListener('click', function(){
         game("scissors");
-        changeBack();
     })
 
     let aim = document.getElementById("aim");
