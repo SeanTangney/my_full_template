@@ -102,3 +102,66 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 - I used [W3C Markup Validator](https://validator.w3.org/) to validate my html. It returned no errors. ![W3C Results](assets/images/html_check.png)
 
 - I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors. ![W3 Jigsaw Result](assets/images/css_check.png)
+
+- I used Lighthouse in developer tools to test my site. This was the result i got
+
+
+# Further Testing
+
+- I have tested the website on Google Chrome, Internet Explorer, Firefox, Safari and Edge.
+- I have tested to make sure the websites navigation is working correctly.
+- The website was tested on Iphone 8, X and 11 pro, Ipad, Macbook Air and Desktop by me.
+- I sent the site link to friends and asked them to test it out and play the game so they could let me know any issues they encountered, how the game felt to play and if navigation and ease of use was all okay.
+
+# Testing the User Stories from the User Experience (UX) Section
+## First Time Visitor Goals
+1. As a first time visitor, I want to instantly understand the purpose of the site.
+    - When first entering the site you instantly know that its a game by the big Lets PLay button. You are given instructions on how to play the game and you are made familiar with the game icons.
+
+2. As a first time visitor, I want to be able to easily navigate through the site.
+    - The site is easily navigated through. If a user presses the lets play button without entering a username they are subtly prompted to do so my means of adding a red margin around the username box. 
+    - When on the game page, if a user would like to return to the landing page to change their username, there is a Home icon on the top left corner of the screen.
+
+3. As a first time visitor, I want the game to be fun.
+    - I think there is a nostalgic feel to this game for everyone. It's not a strategic game but a game of chance, so you never know that the result is going to be! It is a fun game to play. Even to move your mouse around and hover over the icons is fun.
+
+## Returning / Frequent User Goals
+
+2. As a returning / frequent user, I want to be able to come back and play again.
+    - This is an easy one to acheive as the site is live. I think for the returning user in the future there could be added levels of difficulty to the game.
+
+
+# Bugs
+## Resolved
+
+
+## Unresolved
+
+
+# Deployment
+## Github Pages
+The project was deployed to GitHub using the following steps
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page) locate "Settings" on the menu.
+3. Scroll down the settings page until you see the "GitHub Pages" section.
+4. Under "Source", click the dropdown menu called "None" and select "Master Branch".
+5. The page wil automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the 
+
+### Forking the GitHub Repository
+#### When you fork the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or edit without affecting the original repository by using the following steps:
+
+1. Log into GitHub and locate the Github Repository.
+2. At the top of the Repository (not the top of the page) just above Settings on the menu, locate the "Fork" Button.
+You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log into Github, locate the GitHub Repository.
+2. Click on "Clone or Download".
+3. To clone the repository using HTTPS, under " Clone with HTTPS, copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made. 
+6. Type "Git Clone", and then paste the url you copied in step 3.
+7. Press enter, your local clone will be created.
