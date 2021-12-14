@@ -116,13 +116,13 @@ function gameWin(){
 function restart(){
     rock_div.removeEventListener('click', function(){
         game("rock");
-    })
+    });
     paper_div.removeEventListener('click', function(){
         game("paper");
-    })
+    });
     scissors_div.removeEventListener('click', function(){
         game("scissors");
-    })
+    });
 
     let aim = document.getElementById("aim");
     let reset = document.getElementById("reset");
@@ -167,13 +167,13 @@ function game(userChoice){
 function main(){
 rock_div.addEventListener('click', function(){
     game("rock");
-})
+});
 paper_div.addEventListener('click', function(){
     game("paper");
-})
+});
 scissors_div.addEventListener('click', function(){
     game("scissors");
-})
+});
 
 }
  main();
@@ -207,7 +207,7 @@ function getName(){
 
  document.onmousemove = animateCircles;
 
- var colors = ['#E73651', '#FEEA00', '#41EAD4']
+ var colors = ['#E73651', '#FEEA00', '#41EAD4'];
 
  function animateCircles(event) {
      var circle = document.createElement("div");

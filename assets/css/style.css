@@ -5,7 +5,7 @@ html {
 }
 
 body{
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Fuzzy Bubbles', cursive, Garamond, serif;
     background-color: #141515;
     text-align: center;
 }
