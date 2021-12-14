@@ -99,9 +99,11 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
     - Balsamiq was used to create my wireframes in the planning and design process.
 
 ## Testing
-- I used [W3C Markup Validator](https://validator.w3.org/) to validate my html. It returned no errors. ![W3C Results](assets/images/html_check.png)
+- I used [W3C Markup Validator](https://validator.w3.org/) to validate my html. It returned no errors.  \
+![W3C Results](assets/images/html_check.png)
 
-- I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors. ![W3 Jigsaw Result](assets/images/css_check.png)
+- I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors.  \
+![W3 Jigsaw Result](assets/images/css_check.png)
 
 - I used Lighthouse in developer tools to test my site. This was the result i got
 
@@ -165,3 +167,25 @@ You should now have a copy of the original repository in your GitHub account.
 5. Change the current working directory to the location where you want the cloned directory to be made. 
 6. Type "Git Clone", and then paste the url you copied in step 3.
 7. Press enter, your local clone will be created.
+
+
+# Features I Would Like To Implement
+- I would like to add levels of difficulty. This would mean Easy is as the game is now. Hard would be adding in Lizard and Spock to the game.
+
+# Credits
+## Code
+- I used [Stack Overflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/html/default.asp) was used throughout the project to help with syntax issues. 
+- All Code was written by the developer.
+
+## Content
+- [Coolers](https://coolors.co/) Was used to select the colour scheme i used.
+- Principles learned from [Code Institute](https://codeinstitute.net/ie/) were used on this site.
+- Scoreboard design was learned from a [FreeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0&list=PLql9CSyGIEduO5YpWS1TO06ekT5NfGxYG&index=8&ab_channel=freeCodeCamp.org) Youtube Tutorial.
+- Mouse animation was learned from [Codepen](https://codepen.io/morphed/pen/LZWppE).
+
+## Media
+- All icons used were from [FontAwesome](https://fontawesome.com/)
+
+# Aknowlegements 
+1. Tutor support at Code Institute for their help and guidance.
+2. My Mentor for continuous helpful feedback.
