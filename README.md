@@ -99,3 +99,6 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
     - Balsamiq was used to create my wireframes in the planning and design process.
 
 ## Testing
+- I used [W3C Markup Validator](https://validator.w3.org/) to validate my html. It returned no errors. ![W3C Results](assets/images/html_check.png)
+
+- I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors. ![W3 Jigsaw Result](assets/images/css_check.png)
