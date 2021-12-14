@@ -6,10 +6,10 @@
 
 ## Some pictures of the finished site
 ### Landing page
-<img src="/workspace/my_full_template/assets/images/rps_landingPage.png" alt="Screenshot of game landing page" width="750" height="450">
+![Landing page](assets/images/rps_landingPage.png)
 
 ### Game Page
-<img src="/workspace/my_full_template/assets/images/rps_gamePage.png" alt="Screenshot of game landing page" width="750" height="450">
+![Game page](assets/images/rps_gamePage.png)
 
 # User Experience (UX)
 - First time visitor Goals
@@ -47,16 +47,16 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 ## Wireframes
 ### Landing page
-<img src="/workspace/my_full_template/assets/images/Landing Page.png" alt="landing page wireframe" width="700" height="450">
+![landingPageWF](assets/images/landingPageWF.png)
 
 ### Game Page
-<img src="/workspace/my_full_template/assets/images/Game page.png" alt="landing page wireframe" width="700" height="450">
+![gamePageWF](assets/images/gamePageWF.png)
 
 
 # Features
 
 ### Responsive on All Devices - I used am i responsive to check this along with checking on a variety of devices myself.
-<img src="/workspace/my_full_template/assets/images/rps_amIResponsive.png" alt="am i responsive check" width="700" height="450">
+![Am I Responsive](assets/images/rps_amIResponsive.png)
 
 ## Has interactive features
 ### Landing Page
