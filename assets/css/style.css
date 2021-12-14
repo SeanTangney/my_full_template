@@ -364,6 +364,68 @@ input[type=text]{
     
 }
 
+@media screen and (max-width: 350px){
+    header{
+        margin-bottom: 5px;
+    }
+    h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 0.8em;
+        margin-top: 5px;
+        padding-top: 5px;;
+    }
+    .result-text{
+        margin-top: 5px;
+    }
+    .game-weapons{
+        width: 90%;
+        margin: 5px auto;
+    }
+    #h-rock, #h-paper, #h-scissors{
+        padding: 5px;
+        font-size: 4em;;
+    } 
+    #lets-play{
+        margin: 40px 0;
+        font-size: 1.5em;
+    }
+    #rock, #paper, #scissors{
+        font-size: 0.5em;
+        padding: 5px;
+        margin-top: 0;
+    }
+    #robot{
+        font-size: 2em;
+    }
+    #comp-r, #comp-p, #comp-s{
+        padding: 5px;
+        font-size: 0.6em;
+    }
+    #heading{
+        font-size: 1.5em;
+    }
+    .scoreboard{
+        font-size: 20px;
+        margin: 0 auto;
+        width: 75px;
+    }
+    #user-label{
+        position: absolute;
+        top: 18px;
+        left: -30px;
+    }
+    
+    #computer-label{
+        position: absolute;
+        top: 18px;
+        right: -33px;
+    }
+    
+}
+
 
 
 
