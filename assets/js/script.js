@@ -176,7 +176,13 @@ scissors_div.addEventListener('click', function(){
 });
 
 }
- main();
+/**
+ * Funtion to call the function to display name on the scoreboard and to start the game
+ */
+function start(){
+    getName(); 
+    main();
+};
 
 /**
  * Function directs you to game page when lets play is clicked on the index,
