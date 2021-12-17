@@ -60,11 +60,10 @@ function win(userChoice, computerChoice){
     if(userScore !== 5 && computerScore !==5){
     userScore++;
     userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
     console.log("win");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " beats " + computerChoice;
-    } else if(userScore == 5 && computerScore !==5){
+    } if(userScore == 5 && computerScore !==5){
        console.log("user won the game");
        result_text.innerHTML = "Congratulations, You WIN!";
        restart();
@@ -78,12 +77,11 @@ function win(userChoice, computerChoice){
 function lose(userChoice, computerChoice){
     if(computerScore !== 5 && userScore !== 5) {
     computerScore++;
-    userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     console.log("lose");
     computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " loses to " + computerChoice;
-    } else if (computerScore == 5 && userScore !== 5){
+    } if (computerScore == 5 && userScore !== 5){
        console.log("Computer won the game");
        result_text.innerHTML = "Better Luck Next Time!";
        restart();
@@ -96,10 +94,7 @@ function lose(userChoice, computerChoice){
 function draw(userChoice, computerChoice){
     if(computerScore !== 5 && userScore !== 5){
     console.log("draw");
-    computerScore_span.innerHTML = computerScore;
     result_text.innerHTML = userChoice + " was chosen by both, DRAW";
-} else if (computerScore === 5 || userScore === 5){
-    restart();
 }
 }
 
