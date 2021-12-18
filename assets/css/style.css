@@ -256,7 +256,7 @@ input[type=text]{
 
 /*Media queries*/
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1500px){
     .full-game{
         margin-top: 0;
     }
@@ -265,11 +265,11 @@ input[type=text]{
         margin: 0 10%;
     }
     #h-rock, #h-paper, #h-scissors{
-        padding: 25px;
+        padding-top: 25px;
         font-size:8.5em;
     } 
     #lets-play{
-        font-size: 2.5em;
+        font-size: 3em;
     }
     #aim{
         padding-bottom: 0;
