@@ -29,13 +29,13 @@ function getComputerChoice(userChoice, computerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber == 0) {
-        comp_r.style["color"] = "#E73651";
+        comp_r.style.color = "#E73651";
         rockBack();
     } else if (randomNumber == 1) {
-        comp_p.style["color"] = "#FEEA00";
+        comp_p.style.color = "#FEEA00";
         rockBack();
     } else {
-        comp_s.style["color"] = "#41EAD4";
+        comp_s.style.color = "#41EAD4";
         rockBack();
     }
     return choices[randomNumber];
@@ -46,9 +46,9 @@ function getComputerChoice(userChoice, computerChoice) {
  */
 function rockBack() {
     setTimeout(function () {
-        comp_r.style["color"] = "slategray";
-        comp_p.style["color"] = "slategray";
-        comp_s.style["color"] = "slategray";
+        comp_r.style.color = "slategray";
+        comp_p.style.color = "slategray";
+        comp_s.style.color = "slategray";
     }, 2000);
 }
 
@@ -118,8 +118,8 @@ function finish() {
     let aim = document.getElementById("aim");
     let reset = document.getElementById("reset");
 
-    aim.style["display"] = "none";
-    reset.style["display"] = "inline-block";
+    aim.style.display = "none";
+    reset.style.display = "inline-block";
 
 }
 
@@ -181,7 +181,7 @@ function start() {
 function displayName() {
     if (document.getElementById("username-box").value == "") {
         let chosenName = document.getElementById("username-box");
-        chosenName.style["border"] = "2px solid red";
+        chosenName.style.border = "2px solid red";
     } else {
         let chosenName = document.getElementById("username-box").value;
         localStorage.setItem("username", chosenName);
