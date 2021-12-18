@@ -8,9 +8,13 @@ body{
     font-family: 'Fuzzy Bubbles', cursive, Garamond, serif;
     background-color: #141515;
     text-align: center;
+    min-height: 90vh;
+
 }
-
-
+.full-game{
+    min-height: 80vh;
+    margin-top: 4%;
+}
 
 /*Header*/
 h1{
@@ -251,6 +255,32 @@ input[type=text]{
 }
 
 /*Media queries*/
+
+@media screen and (max-width: 1300px){
+
+    .game-weapons{
+        width: 80%;
+        margin: 0 10%;
+    }
+    #h-rock, #h-paper, #h-scissors{
+        padding: 25px;
+        font-size:9.5em;
+    } 
+    #lets-play{
+        font-size: 2.5em;
+    }
+    #rock, #paper, #scissors{
+        font-size: 0.8em;
+        padding: 15px;
+        margin-top: 40px;
+    }
+    #comp-r, #comp-p, #comp-s{
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    }
+
+
 
 @media screen and (max-width: 800px){
 
