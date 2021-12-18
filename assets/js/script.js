@@ -3,6 +3,7 @@
 
 let userScore = 0;
 let computerScore = 0;
+let computerChoice = "";
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".scoreboard");
@@ -39,6 +40,7 @@ function getComputerChoice(userChoice, computerChoice) {
         rockBack();
     }
     return choices[randomNumber];
+    
 }
 
 /**
@@ -67,7 +69,6 @@ function win(userChoice, computerChoice) {
     if (userScore == 5 && computerScore !== 5) {
         result_text.innerHTML = "Congratulations, You WIN!";
         finish();
-        return;
     }
 }
 /**
@@ -78,13 +79,11 @@ function lose(userChoice, computerChoice) {
     if (computerScore !== 5 && userScore !== 5) {
         computerScore++;
         computerScore_span.innerHTML = computerScore;
-        computerScore_span.innerHTML = computerScore;
         result_text.innerHTML = userChoice + " loses to " + computerChoice;
     }
     if (computerScore == 5 && userScore !== 5) {
         result_text.innerHTML = "Better Luck Next Time!";
         finish();
-        return;
     }
 }
 /**
@@ -96,15 +95,13 @@ function draw(userChoice, computerChoice) {
     }
 }
 
+
 /**
- * Finishing the game when 5 is reached by the user or computer
+ * Function to display the reset button once the winner reaches 5.
+ * Event listeners are removed from user weapons.
  */
-
-function gameWin() {
-    result_text.innerHTML = "Congratulations, You have WON!";
-}
-
 function finish() {
+    computerChoice = "";
     rock_div.removeEventListener('click', function () {
         game("rock");
     });
@@ -120,8 +117,29 @@ function finish() {
 
     aim.style.display = "none";
     reset.style.display = "inline-block";
+   
+
 
 }
+
+/**
+ * Reset everything to default before user starts again.
+ */
+gameReset.addEventListener("click", resetTheGame);
+
+function resetTheGame() {
+  computerChoice = "";
+  userScore = 0;
+  computerScore = 0;
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+  aim.style.display = "inline-block";
+  reset.style.display = "none";
+  result_text.innerHTML = "Choose your weapon below to begin!";
+  start();
+}
+
+
 
 
 /**
@@ -130,7 +148,8 @@ function finish() {
  * which functiom should be called. 
  */
 function game(userChoice) {
-    const computerChoice = getComputerChoice();
+    computerChoice = getComputerChoice();
+    console.log(computerChoice);
     switch (userChoice + computerChoice) {
         case "rockscissors":
         case "paperrock":
