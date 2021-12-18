@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
-    <link rel="shortcut icon" href="#">   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="#">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body onload="start()">
     <header>
-        <h1 id="heading"><i id="home-button" class="fas fa-home" onclick="location.href='index.html'" type="button"></i> Rock Paper Scissors</h1>
+        <h1 id="heading"><i id="home-button" class="fas fa-home" onclick="location.href='index.html'" type="button"></i>
+            Rock Paper Scissors</h1>
     </header>
-    
+
 
     <div id="full-game">
-    <div>
-    <i id="robot" class="fas fa-robot fa-4x"></i>
-    </div>
+        <div>
+            <i id="robot" class="fas fa-robot fa-4x"></i>
+        </div>
 
-    <div class="computer-weapons">
-        <div id="comp-r"><i class="far fa-hand-rock fa-6x"></i></div>
-        <div id="comp-p"><i class="far fa-hand-paper fa-6x"></i></div> 
-        <div id="comp-s"><i class="far fa-hand-scissors fa-6x"></i></div>
-    </div>
+        <div class="computer-weapons">
+            <div id="comp-r"><i class="far fa-hand-rock fa-6x"></i></div>
+            <div id="comp-p"><i class="far fa-hand-paper fa-6x"></i></div>
+            <div id="comp-s"><i class="far fa-hand-scissors fa-6x"></i></div>
+        </div>
 
-    
 
-    <h2 id="aim">First To 5 wins!</h2>
-    <button id="reset" type="button" onclick="window.location.reload()">RESET</button>
 
-    <div class="scoreboard">
-        <div id="user-label" class="badge">User</div>
-        <div id="computer-label" class="badge">Robot</div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>
-    </div>
+        <h2 id="aim">First To 5 wins!</h2>
+        <button id="reset" type="button" onclick="window.location.reload()">RESET</button>
 
-    <div class="game-result">
-        <h2 class="result-text">Choose your weapon below to begin!</h2>
-    </div>
+        <div class="scoreboard">
+            <div id="user-label" class="badge">User</div>
+            <div id="computer-label" class="badge">Robot</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
 
-    <div class="game-weapons">
-        <div id="rock"><i class="far fa-hand-rock fa-10x"></i></div>
-        <div id="paper"><i class="far fa-hand-paper fa-10x"></i></div> 
-        <div id="scissors"><i class="far fa-hand-scissors fa-10x"></i></div>
-    </div>
+        <div class="game-result">
+            <h2 class="result-text">Choose your weapon below to begin!</h2>
+        </div>
+
+        <div class="game-weapons">
+            <div id="rock"><i class="far fa-hand-rock fa-10x"></i></div>
+            <div id="paper"><i class="far fa-hand-paper fa-10x"></i></div>
+            <div id="scissors"><i class="far fa-hand-scissors fa-10x"></i></div>
+        </div>
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

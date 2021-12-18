@@ -27,10 +27,10 @@ const scissors = document.getElementById("scissors");
 function getComputerChoice(userChoice, computerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
-    if(randomNumber == 0){
-       comp_r.style["color"] = "#E73651";
-       rockBack();
-    } else if(randomNumber == 1){
+    if (randomNumber == 0) {
+        comp_r.style["color"] = "#E73651";
+        rockBack();
+    } else if (randomNumber == 1) {
         comp_p.style["color"] = "#FEEA00";
         rockBack();
     } else {
@@ -44,78 +44,73 @@ function getComputerChoice(userChoice, computerChoice) {
  * Change back colour of computer chosen weapon to default after 2 seconds
  */
 function rockBack() {
-    setTimeout(function(){ 
-        comp_r.style["color"] = "slategray"; 
+    setTimeout(function () {
+        comp_r.style["color"] = "slategray";
         comp_p.style["color"] = "slategray";
         comp_s.style["color"] = "slategray";
     }, 2000);
-  }
+}
 
 
 /**
  * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
  * scoreboard and logs it to the console.
  */
-function win(userChoice, computerChoice){
-    if(userScore !== 5 && computerScore !==5){
-    userScore++;
-    userScore_span.innerHTML = userScore;
-    console.log("win");
-    computerScore_span.innerHTML = computerScore;
-    result_text.innerHTML = userChoice + " beats " + computerChoice;
-    } if(userScore == 5 && computerScore !==5){
-       console.log("user won the game");
-       result_text.innerHTML = "Congratulations, You WIN!";
-       restart();
-       return;
+function win(userChoice, computerChoice) {
+    if (userScore !== 5 && computerScore !== 5) {
+        userScore++;
+        userScore_span.innerHTML = userScore;
+        computerScore_span.innerHTML = computerScore;
+        result_text.innerHTML = userChoice + " beats " + computerChoice;
+    }
+    if (userScore == 5 && computerScore !== 5) {
+        result_text.innerHTML = "Congratulations, You WIN!";
+        finish();
+        return;
     }
 }
 /**
  * This function executes when you lose. It adds 1 to the computer score. Displays +1 to the computer score on the 
  * scoreboard and logs it to the console.
  */
-function lose(userChoice, computerChoice){
-    if(computerScore !== 5 && userScore !== 5) {
-    computerScore++;
-    computerScore_span.innerHTML = computerScore;
-    console.log("lose");
-    computerScore_span.innerHTML = computerScore;
-    result_text.innerHTML = userChoice + " loses to " + computerChoice;
-    } if (computerScore == 5 && userScore !== 5){
-       console.log("Computer won the game");
-       result_text.innerHTML = "Better Luck Next Time!";
-       restart();
-       return;
+function lose(userChoice, computerChoice) {
+    if (computerScore !== 5 && userScore !== 5) {
+        computerScore++;
+        computerScore_span.innerHTML = computerScore;
+        computerScore_span.innerHTML = computerScore;
+        result_text.innerHTML = userChoice + " loses to " + computerChoice;
+    }
+    if (computerScore == 5 && userScore !== 5) {
+        result_text.innerHTML = "Better Luck Next Time!";
+        finish();
+        return;
     }
 }
 /**
  * This function executes to tell the user that round was a draw
  */
-function draw(userChoice, computerChoice){
-    if(computerScore !== 5 && userScore !== 5){
-    console.log("draw");
-    result_text.innerHTML = userChoice + " was chosen by both, DRAW";
+function draw(userChoice, computerChoice) {
+    if (computerScore !== 5 && userScore !== 5) {
+        result_text.innerHTML = userChoice + " was chosen by both, DRAW";
+    }
 }
-}
-
 
 /**
  * Finishing the game when 5 is reached by the user or computer
  */
 
-function gameWin(){
+function gameWin() {
     result_text.innerHTML = "Congratulations, You have WON!";
-    console.log("Game over, user won");
 }
 
-function restart(){
-    rock_div.removeEventListener('click', function(){
+function finish() {
+    rock_div.removeEventListener('click', function () {
         game("rock");
     });
-    paper_div.removeEventListener('click', function(){
+    paper_div.removeEventListener('click', function () {
         game("paper");
     });
-    scissors_div.removeEventListener('click', function(){
+    scissors_div.removeEventListener('click', function () {
         game("scissors");
     });
 
@@ -123,7 +118,7 @@ function restart(){
     let reset = document.getElementById("reset");
 
     aim.style["display"] = "none";
-    reset.style["display"] = "inline-block";  
+    reset.style["display"] = "inline-block";
 
 }
 
@@ -133,9 +128,9 @@ function restart(){
  * define a switch case to determine the result of the game, and determine
  * which functiom should be called. 
  */
-function game(userChoice){
+function game(userChoice) {
     const computerChoice = getComputerChoice();
-    switch (userChoice + computerChoice){
+    switch (userChoice + computerChoice) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
@@ -150,86 +145,80 @@ function game(userChoice){
         case "paperpaper":
         case "scissorsscissors":
             draw(userChoice, computerChoice);
-            break;            
+            break;
     }
 }
-
-
 
 /**
  * Event listeners to determine the users choice ( rock, paper or scissors)
  */
-function main(){
-rock_div.addEventListener('click', function(){
-    game("rock");
-});
-paper_div.addEventListener('click', function(){
-    game("paper");
-});
-scissors_div.addEventListener('click', function(){
-    game("scissors");
-});
-
+function main() {
+    rock_div.addEventListener('click', function () {
+        game("rock");
+    });
+    paper_div.addEventListener('click', function () {
+        game("paper");
+    });
+    scissors_div.addEventListener('click', function () {
+        game("scissors");
+    });
 }
+
 /**
  * Funtion to call the function to display name on the scoreboard and to start the game
  */
-function start(){
-    getName(); 
+function start() {
+    getName();
     main();
-};
+}
 
 /**
  * Function directs you to game page when lets play is clicked on the index,
  * Inputted username is displayed on scoreboard
  */
 
- 
-
- function displayName(){
-        if (document.getElementById("username-box").value == "") {
-            let chosenName = document.getElementById("username-box");
-            chosenName.style["border"] = "2px solid red";
-        } else {
-    let chosenName = document.getElementById("username-box").value;
-    localStorage.setItem("username", chosenName);
-    console.log(chosenName);
-    window.location = "game.html";   
+function displayName() {
+    if (document.getElementById("username-box").value == "") {
+        let chosenName = document.getElementById("username-box");
+        chosenName.style["border"] = "2px solid red";
+    } else {
+        let chosenName = document.getElementById("username-box").value;
+        localStorage.setItem("username", chosenName);
+        window.location = "game.html";
     }
 }
 
-function getName(){
+/**
+ * Add the username from storage into the userbadge
+ */
+function getName() {
     nameBadge.innerHTML = localStorage.getItem("username");
 }
 
+// Mouse animation https://codepen.io/morphed/pen/LZWppE
 
+document.onmousemove = animateCircles;
 
- // Mouse animation https://codepen.io/morphed/pen/LZWppE
+var colors = ['#E73651', '#FEEA00', '#41EAD4'];
 
- document.onmousemove = animateCircles;
+function animateCircles(event) {
+    var circle = document.createElement("div");
+    circle.setAttribute("class", "circle");
+    document.body.appendChild(circle);
 
- var colors = ['#E73651', '#FEEA00', '#41EAD4'];
+    circle.style.left = event.clientX + 'px';
+    circle.style.top = event.clientY + 'px';
 
- function animateCircles(event) {
-     var circle = document.createElement("div");
-     circle.setAttribute("class", "circle");
-     document.body.appendChild(circle);
-     
-     circle.style.left = event.clientX + 'px';
-     circle.style.top = event.clientY + 'px';
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    circle.style.borderColor = color;
 
-     var color = colors[Math.floor(Math.random() * colors.length)];
-     circle.style.borderColor = color;
+    circle.style.transition = "all 0.3s linear 0s";
 
-     circle.style.transition = "all 0.3s linear 0s";
+    circle.style.left = circle.offsetLeft - 20 + 'px';
+    circle.style.top = circle.offsetTop - 20 + 'px';
 
-     circle.style.left = circle.offsetLeft - 20 + 'px';
-     circle.style.top = circle.offsetTop - 20 + 'px';
-
-     circle.style.width = "50px";
-     circle.style.height = "50px";
-     circle.style.borderWidth = "5px";
-     circle.style.opacity = 0;
- }
-
-
+    circle.style.width = "50px";
+    circle.style.height = "50px";
+    circle.style.borderWidth = "5px";
+    circle.style.opacity = 0;
+}
