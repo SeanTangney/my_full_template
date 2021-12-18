@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /*Caching the dom*/
 
 let userScore = 0;
