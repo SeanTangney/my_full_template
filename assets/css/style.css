@@ -256,7 +256,7 @@ input[type=text]{
 
 /*Media queries*/
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1600px){
     .full-game{
         margin-top: 0;
     }
