@@ -27,20 +27,19 @@ const scissors = document.getElementById("scissors");
  * change color of computer wepons to show which one was chosen
  */
 function getComputerChoice(userChoice, computerChoice) {
-    const choices = ['rock', 'paper', 'scissors'];
-    const randomNumber = Math.floor(Math.random() * 3);
-    if (randomNumber == 0) {
-        comp_r.style.color = "#E73651";
-        rockBack();
-    } else if (randomNumber == 1) {
-        comp_p.style.color = "#FEEA00";
-        rockBack();
-    } else {
-        comp_s.style.color = "#41EAD4";
-        rockBack();
-    }
-    return choices[randomNumber];
-    
+        const choices = ['rock', 'paper', 'scissors'];
+        const randomNumber = Math.floor(Math.random() * 3);
+        if (randomNumber == 0) {
+            comp_r.style.color = "#E73651";
+            rockBack();
+        } else if (randomNumber == 1) {
+            comp_p.style.color = "#FEEA00";
+            rockBack();
+        } else {
+            comp_s.style.color = "#41EAD4";
+            rockBack();
+        }
+        return choices[randomNumber];
 }
 
 /**
@@ -118,8 +117,6 @@ function finish() {
     aim.style.display = "none";
     reset.style.display = "inline-block";
    
-
-
 }
 
 /**
@@ -136,7 +133,6 @@ function resetTheGame() {
   aim.style.display = "inline-block";
   reset.style.display = "none";
   result_text.innerHTML = "Choose your weapon below to begin!";
-  start();
 }
 
 
