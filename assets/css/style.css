@@ -11,10 +11,7 @@ body{
     min-height: 90vh;
 
 }
-#full-game{
-    min-height: 80vh;
-    margin-top: 4%;
-}
+
 
 /*Header*/
 h1{
@@ -143,13 +140,13 @@ text-shadow: none;
 h2{
     color: rgb(224, 224, 224);
     margin:  0;
-    padding-top: 25px;
+    padding: 25px 0;
 }
 #aim{
     color: rgb(224, 224, 224);
     padding:25px 0;
     margin: 0;
-    display:inline-block;
+    display: inline-block;
 }
 
 /*Reset button to restart the game*/
@@ -257,12 +254,9 @@ input[type=text]{
 /*Media queries*/
 
 @media screen and (max-width: 1600px){
-    #full-game{
-        margin-top: 0;
-    }
     #game-weapons{
-        width: 80%;
-        margin: 0 10%;
+        width: 65%;
+        margin: auto;
     }
     #h-rock, #h-paper, #h-scissors{
         padding-top: 25px;
@@ -289,17 +283,39 @@ input[type=text]{
     }
     }
 
+    @media screen and (max-width: 1200px){
+        
+        #game-weapons{
+            width: 100%;
+            margin: 20px auto;
+        }
+        #game-weapons>i{
+            font-size: 8em;
+            padding: 34px;
+        }
+        #h-rock, #h-paper, #h-scissors{
+            padding-top: 25px;
+            font-size:8.5em;
+        } 
+        
+        }
+
 
 
 @media screen and (max-width: 800px){
-
+h2{
+    padding: 35px 0;
+}
 #game-weapons{
-    width: 80%;
-    margin: 0 10%;
+    width: 100%;
+    margin: 0;
+}
+#game-weapons>i{
+    padding: 16px;
 }
 #h-rock, #h-paper, #h-scissors{
     padding: 25px;
-    font-size:9.5em;
+    font-size:8em;
 } 
 #lets-play{
     font-size: 3em;
@@ -307,12 +323,24 @@ input[type=text]{
 #rock, #paper, #scissors{
     font-size: 0.8em;
     padding: 15px;
-    margin-top: 40px;
+    margin-top: 0;
 }
+
 #comp-r, #comp-p, #comp-s{
     padding: 10px;
     font-size: 0.8em;
 }
+#play-button{
+    margin-top: 40px;
+}
+}
+@media screen and (max-width: 700px){
+    #game-weapons>div{
+        padding: 30px;
+    }
+    #rock, #paper, #scissors{
+        font-size: 0.65em;
+        margin-top: 0px;
 }
 
 @media screen and (max-width: 600px){
@@ -321,18 +349,25 @@ input[type=text]{
         margin-bottom: 40px;
     }
     h2{
-        margin: 40px 10px 20px 10px;
+        font-size: 1.5em;
+        margin: 20px 10px;
     }
     #game-weapons{
         width: 80%;
-        margin: 0 10%;
+        margin: auto;
     }
     #h-rock, #h-paper, #h-scissors{
         padding: 15px;
         font-size:8em;;
     } 
+    #play-button{
+        margin-top: 0;
+    }
     #lets-play{
         font-size: 2em;
+    }
+    #game-weapons>div{
+        padding: 20px;
     }
     #rock, #paper, #scissors{
         font-size: 0.55em;
@@ -345,6 +380,17 @@ input[type=text]{
     }
 }
 
+@media screen and (max-width: 500px){
+    .result-text{
+        font-size:1.1em;
+    }
+    #game-weapons>div{
+        padding: 10px;
+    }
+    #computer-weapons>div{
+        padding: 5px;
+    }
+}
 
 @media screen and (max-width: 420px){
     h2{
@@ -358,14 +404,19 @@ input[type=text]{
     #game-weapons{
         width: 90%;
         margin: 8% 5%;
+        
+    }
+    #game-weapons > i{
+        padding: 15px;
+        margin: auto;
     }
     #h-rock, #h-paper, #h-scissors{
         padding: 15px;
-        font-size: 4em;;
+        font-size: 6em;;
     } 
     #lets-play{
         margin: 40px 0;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     #rock, #paper, #scissors{
         font-size: 0.5em;
@@ -398,10 +449,19 @@ input[type=text]{
         top: 18px;
         right: -33px;
     }
+    #computer-weapons>div{
+        margin: 20px auto;
+    }
+    #game-weapons>div{
+        margin: 20px auto;
+    }
+    .result-text{
+        margin: 20px auto;
+    }
     
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 360px){
     header{
         margin-bottom: 5px;
     }
@@ -421,12 +481,13 @@ input[type=text]{
         margin-top: 5px;
     }
     #game-weapons{
-        width: 90%;
+        width: 100%;
         margin: 5px auto;
     }
+
     #h-rock, #h-paper, #h-scissors{
         padding: 5px;
-        font-size: 4em;;
+        font-size: 2em;
     } 
     #lets-play{
         margin: 40px 0;
@@ -462,7 +523,4 @@ input[type=text]{
     }
     
 }
-
-
-
-
+}
