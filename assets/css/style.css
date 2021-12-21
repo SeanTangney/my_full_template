@@ -4,7 +4,7 @@ html {
     overflow-y: hidden;
 }
 
-body{
+body {
     font-family: 'Fuzzy Bubbles', cursive, Garamond, serif;
     background-color: #141515;
     text-align: center;
@@ -14,12 +14,12 @@ body{
 
 
 /*Header*/
-h1{
+h1 {
     color: rgb(224, 224, 224);
     font-size: 3em;
 }
 
-#heading{
+#heading {
     color: rgb(224, 224, 224);
     font-size: 2em;
     text-align: left;
@@ -28,123 +28,128 @@ h1{
 
 /*Home button*/
 
-#home-button:hover{
-   border-bottom: 2px solid #fff;
-   text-shadow:
-    0 0 3px #E73651,
-    0 0 6px #FEEA00,
-    0 0 10px #41EAD4,
-    0 0 14px #E73651,
-    0 0 20px #FEEA00;
+#home-button:hover {
+    border-bottom: 2px solid #fff;
+    text-shadow:
+        0 0 3px #E73651,
+        0 0 6px #FEEA00,
+        0 0 10px #41EAD4,
+        0 0 14px #E73651,
+        0 0 20px #FEEA00;
 }
 
 /*Robot*/
 
-#robot{
+#robot {
     color: Mediumslateblue;
     margin: 0;
     padding-bottom: 10px;
 }
 
-#robot:hover{
+#robot:hover {
     color: #fff;
     text-shadow:
-    0 0 7px Mediumslateblue,
-    0 0 10px Mediumslateblue,
-    0 0 21px Mediumslateblue,
-    0 0 42px Mediumslateblue,
-    0 0 82px Mediumslateblue,
-    0 0 102px Mediumslateblue,
-    0 0 122px Mediumslateblue;
+        0 0 7px Mediumslateblue,
+        0 0 10px Mediumslateblue,
+        0 0 21px Mediumslateblue,
+        0 0 42px Mediumslateblue,
+        0 0 82px Mediumslateblue,
+        0 0 102px Mediumslateblue,
+        0 0 122px Mediumslateblue;
 }
 
 
 /*Computer weapons*/
-#computer-weapons > i{
+#computer-weapons>i {
     padding: 20px;
 }
 
-#computer-weapons > div{
+#computer-weapons>div {
     display: inline-block;
-    padding:10px 15px;
-} 
+    padding: 10px 15px;
+}
 
-#comp-r{
+#comp-r {
     color: slategray;
 }
 
-#comp-p{
+#comp-p {
     color: slategray;
 }
 
-#comp-s{
-color: slategray;
+#comp-s {
+    color: slategray;
 }
 
 /*user weapons*/
 
-#game-weapons > i{
+#game-weapons>i {
     padding: 50px;
 }
 
-#game-weapons > div{
+#game-weapons>div {
     display: inline-block;
     padding: 50px;
 }
 
-#rock, #h-rock{
+#rock,
+#h-rock {
     color: #E73651;
     text-shadow: none;
 }
 
-#paper, #h-paper{
+#paper,
+#h-paper {
     color: #FEEA00;
     text-shadow: none;
 }
 
-#scissors, #h-scissors{
-color: #41EAD4;
-text-shadow: none;
+#scissors,
+#h-scissors {
+    color: #41EAD4;
+    text-shadow: none;
 }
 
-#rock:hover{
+#rock:hover {
     color: #fff;
     text-shadow:
-    0 0 7px #E73651,
-    0 0 10px #E73651,
-    0 0 21px #E73651,
-    0 0 42px #E73651,
-    0 0 82px #E73651;
+        0 0 7px #E73651,
+        0 0 10px #E73651,
+        0 0 21px #E73651,
+        0 0 42px #E73651,
+        0 0 82px #E73651;
 }
 
-#paper:hover{
+#paper:hover {
     color: #fff;
     text-shadow:
-    0 0 7px #FEEA00,
-    0 0 10px #FEEA00,
-    0 0 21px #FEEA00,
-    0 0 42px #FEEA00,
-    0 0 82px #FEEA00;
+        0 0 7px #FEEA00,
+        0 0 10px #FEEA00,
+        0 0 21px #FEEA00,
+        0 0 42px #FEEA00,
+        0 0 82px #FEEA00;
 }
 
-#scissors:hover{
+#scissors:hover {
     color: #fff;
     text-shadow:
-    0 0 7px #41EAD4,
-    0 0 10px #41EAD4,
-    0 0 21px #41EAD4,
-    0 0 42px #41EAD4,
-    0 0 82px #41EAD4;
-    }
+        0 0 7px #41EAD4,
+        0 0 10px #41EAD4,
+        0 0 21px #41EAD4,
+        0 0 42px #41EAD4,
+        0 0 82px #41EAD4;
+}
+
 /*Result box*/
-h2{
+h2 {
     color: rgb(224, 224, 224);
-    margin:  0;
+    margin: 0;
     padding: 25px 0;
 }
-#aim{
+
+#aim {
     color: rgb(224, 224, 224);
-    padding:25px 0;
+    padding: 25px 0;
     margin: 0;
     display: inline-block;
 }
@@ -160,33 +165,33 @@ h2{
     display: none;
     border: 1px solid #141515;
     border-radius: 10px;
-    background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
+    background-image: linear-gradient(to right, #41EAD4, #41EAD4, #FEEA00, #FEEA00, #E73651, #E73651);
 }
 
-#reset:hover{
-    background: linear-gradient(to right, #E73651,#E73651,#FEEA00,#FEEA00,#41EAD4,#41EAD4);
+#reset:hover {
+    background: linear-gradient(to right, #E73651, #E73651, #FEEA00, #FEEA00, #41EAD4, #41EAD4);
 }
 
 /*Username Input Box*/
 
-#username-box{
+#username-box {
     font-size: 1em;
     margin-top: 15px;
     padding: 2px;
-    border:2px solid rgb(87, 87, 87);
+    border: 2px solid rgb(87, 87, 87);
     border-radius: 3px;
     background-color: #141515;
 }
 
-input[type=text]{
+input[type=text] {
     color: #fff;
     text-align: center;
 }
 
 /*Play button*/
-#lets-play{
+#lets-play {
     font-family: 'Fuzzy Bubbles', cursive;
-    background-image: linear-gradient(to right,#41EAD4,#41EAD4,#FEEA00,#FEEA00,#E73651,#E73651);
+    background-image: linear-gradient(to right, #41EAD4, #41EAD4, #FEEA00, #FEEA00, #E73651, #E73651);
     font-size: 4em;
     color: rgb(38, 44, 49);
     padding: 0.5em;
@@ -195,14 +200,14 @@ input[type=text]{
     border-radius: 50px;
 }
 
-#lets-play:hover{
-    background: linear-gradient(to right, #E73651,#E73651,#FEEA00,#FEEA00,#41EAD4,#41EAD4);
+#lets-play:hover {
+    background: linear-gradient(to right, #E73651, #E73651, #FEEA00, #FEEA00, #41EAD4, #41EAD4);
 
 }
 
 /*Scoreboard*/
 
-#scoreboard{
+#scoreboard {
     border: 3px solid #eb8493;
     border-radius: 4px;
     margin: 20px auto;
@@ -214,7 +219,7 @@ input[type=text]{
     position: relative;
 }
 
-.badge{
+.badge {
     background: #141515;
     border: 1px solid;
     border-radius: 4px;
@@ -222,20 +227,22 @@ input[type=text]{
     font-size: 14px;
     padding: 2px 10px;
 }
-#computer-score{
+
+#computer-score {
     padding-left: 10px;
 }
-#user-score{
+
+#user-score {
     padding-right: 10px;
 }
 
-#user-label{
+#user-label {
     position: absolute;
     top: 27px;
     left: -30px;
 }
 
-#computer-label{
+#computer-label {
     position: absolute;
     top: 27px;
     right: -33px;
@@ -254,214 +261,285 @@ input[type=text]{
 
 /*Media queries*/
 
-@media screen and (max-width: 1600px){
-    #game-weapons{
+@media screen and (max-width: 1600px) {
+    #game-weapons {
         width: 65%;
         margin: auto;
     }
-    #h-rock, #h-paper, #h-scissors{
+
+    #h-rock,
+    #h-paper,
+    #h-scissors {
         padding-top: 25px;
-        font-size:8.5em;
-    } 
-    #lets-play{
+        font-size: 8.5em;
+    }
+
+    #lets-play {
         font-size: 3em;
     }
-    #aim{
+
+    #aim {
         padding-bottom: 0;
     }
-    .result-text{
+
+    .result-text {
         margin-top: 0;
         padding: 0;
     }
-    #rock, #paper, #scissors{
+
+    #rock,
+    #paper,
+    #scissors {
         font-size: 0.8em;
         padding: 15px;
     }
-    #comp-r, #comp-p, #comp-s{
+
+    #comp-r,
+    #comp-p,
+    #comp-s {
         padding: 10px;
         font-size: 0.8em;
     }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #game-weapons {
+        width: 100%;
+        margin: 20px auto;
     }
 
-    @media screen and (max-width: 1200px){
-        
-        #game-weapons{
-            width: 100%;
-            margin: 20px auto;
-        }
-        #game-weapons>i{
-            font-size: 8em;
-            padding: 34px;
-        }
-        #h-rock, #h-paper, #h-scissors{
-            padding-top: 25px;
-            font-size:8.5em;
-        } 
-        
-        }
+    #game-weapons>i {
+        font-size: 8em;
+        padding: 34px;
+    }
+
+    #h-rock,
+    #h-paper,
+    #h-scissors {
+        padding-top: 25px;
+        font-size: 8.5em;
+    }
+
+}
 
 
 
-@media screen and (max-width: 800px){
-h2{
-    padding: 35px 0;
-}
-#game-weapons{
-    width: 100%;
-    margin: 0;
-}
-#game-weapons>i{
-    padding: 16px;
-}
-#h-rock, #h-paper, #h-scissors{
-    padding: 25px;
-    font-size:8em;
-} 
-#lets-play{
-    font-size: 3em;
-}
-#rock, #paper, #scissors{
-    font-size: 0.8em;
-    padding: 15px;
-    margin-top: 0;
+@media screen and (max-width: 800px) {
+    h2 {
+        padding: 35px 0;
+    }
+
+    #game-weapons {
+        width: 100%;
+        margin: 0;
+    }
+
+    #game-weapons>i {
+        padding: 16px;
+    }
+
+    #h-rock,
+    #h-paper,
+    #h-scissors {
+        padding: 25px;
+        font-size: 8em;
+    }
+
+    #lets-play {
+        font-size: 3em;
+    }
+
+    #rock,
+    #paper,
+    #scissors {
+        font-size: 0.8em;
+        padding: 15px;
+        margin-top: 0;
+    }
+
+    #comp-r,
+    #comp-p,
+    #comp-s {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    #play-button {
+        margin-top: 40px;
+    }
 }
 
-#comp-r, #comp-p, #comp-s{
-    padding: 10px;
-    font-size: 0.8em;
-}
-#play-button{
-    margin-top: 40px;
-}
-}
-@media screen and (max-width: 700px){
-    #game-weapons>div{
+@media screen and (max-width: 700px) {
+    #game-weapons>div {
         padding: 30px;
     }
-    #rock, #paper, #scissors{
+
+    #rock,
+    #paper,
+    #scissors {
         font-size: 0.65em;
         margin-top: 0px;
+    }
 }
 
-@media screen and (max-width: 600px){
-    h1{
+@media screen and (max-width: 600px) {
+    h1 {
         font-size: 2em;
         margin-bottom: 40px;
     }
-    h2{
+
+    h2 {
         font-size: 1.5em;
         margin: 20px 10px;
     }
-    #game-weapons{
+
+    #game-weapons {
         width: 80%;
         margin: auto;
     }
-    #h-rock, #h-paper, #h-scissors{
+
+    #h-rock,
+    #h-paper,
+    #h-scissors {
         padding: 15px;
-        font-size:8em;;
-    } 
-    #play-button{
+        font-size: 8em;
+        ;
+    }
+
+    #play-button {
         margin-top: 0;
     }
-    #lets-play{
+
+    #lets-play {
         font-size: 2em;
     }
-    #game-weapons>div{
+
+    #game-weapons>div {
         padding: 20px;
     }
-    #rock, #paper, #scissors{
+
+    #rock,
+    #paper,
+    #scissors {
         font-size: 0.55em;
         padding: 8px;
         margin-top: 0;
     }
-    #comp-r, #comp-p, #comp-s{
+
+    #comp-r,
+    #comp-p,
+    #comp-s {
         padding: 10px;
         font-size: 0.7em;
     }
 }
 
-@media screen and (max-width: 500px){
-    h1{
+@media screen and (max-width: 500px) {
+    h1 {
         font-size: 1.5em;
     }
-    .result-text{
-        font-size:1.1em;
+
+    .result-text {
+        font-size: 1.1em;
     }
-    #game-weapons>div{
+
+    #game-weapons>div {
         padding: 10px;
     }
-    #computer-weapons>div{
+
+    #computer-weapons>div {
         padding: 5px;
     }
 }
 
-@media screen and (max-width: 420px){
-    h2{
+@media screen and (max-width: 420px) {
+    h2 {
         font-size: 1em;
         margin: 0 auto;
         padding: 0;
     }
-    .result-text{
+
+    .result-text {
         margin-top: 5px;
     }
-    #game-weapons{
+
+    #game-weapons {
         width: 90%;
         margin: 8% 5% 0 5%;
-        
+
     }
-    #game-weapons > i{
+
+    #game-weapons>i {
         padding: 15px;
         margin: auto;
         font-size: 6em;
     }
-    #h-rock, #h-paper, #h-scissors{
+
+    #h-rock,
+    #h-paper,
+    #h-scissors {
         padding: 15px;
-    } 
-    #lets-play{
+    }
+
+    #lets-play {
         margin: 40px 0;
         font-size: 2em;
     }
-    #rock, #paper, #scissors{
+
+    #rock,
+    #paper,
+    #scissors {
         font-size: 0.5em;
         padding: 10px;
         margin-top: 0;
     }
-    #robot{
+
+    #robot {
         font-size: 3em;
     }
-    #comp-r, #comp-p, #comp-s{
+
+    #comp-r,
+    #comp-p,
+    #comp-s {
         padding: 10px;
         font-size: 0.6em;
     }
-    #heading{
+
+    #heading {
         font-size: 1.5em;
     }
-    #scoreboard{
+
+    #scoreboard {
         font-size: 20px;
         margin: 0 auto;
         width: 150px;
     }
-    #user-label{
+
+    #user-label {
         position: absolute;
         top: 18px;
         left: -30px;
     }
-    
-    #computer-label{
+
+    #computer-label {
         position: absolute;
         top: 18px;
         right: -33px;
     }
-    #computer-weapons>div{
+
+    #computer-weapons>div {
         margin: 20px auto;
     }
-    #game-weapons>div{
+
+    #game-weapons>div {
         margin: 20px auto;
     }
-    .result-text{
+
+    .result-text {
         margin: 20px auto;
     }
-    
+
 }
 
 
@@ -471,76 +549,98 @@ h2{
     #game-weapons>i {
         font-size: 5em;
     }
+
     #game-weapons {
         margin-top: 5px;
     }
-    h1{
+
+    h1 {
         margin-bottom: 10px;
     }
-    #lets-play{
+
+    #lets-play {
         margin: 10px 0;
         font-size: 1.5em;
+    }
 }
-@media screen and (max-width: 360px){
-    header{
+
+@media screen and (max-width: 360px) {
+    header {
         margin-bottom: 5px;
     }
-    #heading{
+
+    #heading {
         font-size: 1em;
     }
-    h1{
+
+    h1 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    h2{
+
+    h2 {
         font-size: 0.8em;
         margin-top: 5px;
-        padding-top: 5px;;
+        padding-top: 5px;
+        ;
     }
-    .result-text{
+
+    .result-text {
         margin-top: 5px;
     }
-    #game-weapons{
+
+    #game-weapons {
         width: 100%;
         margin: 5px auto;
     }
 
-    #h-rock, #h-paper, #h-scissors{
+    #h-rock,
+    #h-paper,
+    #h-scissors {
         padding: 5px;
         font-size: 2em;
-    } 
-    #lets-play{
-        margin: 40px 0;
+    }
+
+    #lets-play {
+        margin: 10px 0;
         font-size: 1.5em;
     }
-    #rock, #paper, #scissors{
+
+    #rock,
+    #paper,
+    #scissors {
         font-size: 0.5em;
         padding: 5px;
         margin-top: 0;
     }
-    #robot{
+
+    #robot {
         font-size: 2em;
     }
-    #comp-r, #comp-p, #comp-s{
+
+    #comp-r,
+    #comp-p,
+    #comp-s {
         padding: 5px;
         font-size: 0.6em;
     }
-    #scoreboard{
+
+    #scoreboard {
         font-size: 20px;
         margin: 0 auto;
         width: 125px;
     }
-    #user-label{
+
+    #user-label {
         position: absolute;
         top: 18px;
         left: -30px;
     }
-    
-    #computer-label{
+
+    #computer-label {
         position: absolute;
         top: 18px;
         right: -33px;
     }
-    
-}
+
 }
