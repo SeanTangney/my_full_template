@@ -148,7 +148,6 @@ function resetTheGame() {
  */
 function game(userChoice) {
     computerChoice = getComputerChoice();
-    console.log(computerChoice);
     switch (userChoice + computerChoice) {
         case "rockscissors":
         case "paperrock":

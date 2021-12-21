@@ -65,14 +65,29 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 ## Has interactive features
 ### Landing Page
--   Username is required to be able to use the Lets play button.
--   The Lets play button has a hover feature where it inverts its colours.
+-   Username is required to be able to use the Lets play button. If an no username is inputted by the user they will not be allowed to use the lets play button and be greeted with a red border around the text box showing their error.  \
+![Username](assets/images/username_entry.png) ![Username Error](assets/images/invalid_username_entry.png)
+-   The Lets play button has a hover feature where it inverts its colours. When pressed , if a valid username has been entered this will take you to the game page.
+![Lets Play!](assets/images/lets_play.png)
 ### Game Page
--   The colorful Rock, Paper and scissors icons on the bottom of the page have a hover effect which will display them as glowing neon icons. I found this great tutorial on [CSS Tricks](https://css-tricks.com/how-to-create-neon-text-with-css/) 
--   The scoreboard updates live to the current score of the game as you play.
--   When rock paper or scissors is selected, you get feedback on what the computer/robot has selected too. This happens in two form, the robots selected icon will light up for 2 seconds and turn off again. There will be a little written description of what you picked and what the robot picked and the result of that round.
-- There is a home button on the top left corner of the header to take you back to the landing page. This also lightly glows as you hover over it staying consistent with the rest of the site.
-- I have a fun cursor follower animation for the game page. It adds to the "game feel". I found this cool animation on [CodePen](https://codepen.io/morphed/pen/LZWppE).
+-   The colorful Rock, Paper and scissors icons on the bottom of the page have a hover effect which will display them as glowing neon icons. I found this great tutorial on [CSS Tricks](https://css-tricks.com/how-to-create-neon-text-with-css/).   \
+![RPS Neon Hover](assets/images/weapon_hover_effect.png)
+
+-   The scoreboard updates live to the current score of the game as you play.   \
+![Scoreboard](assets/images/scoreboard.png)
+
+-   When rock paper or scissors is selected, you get feedback on what the computer/robot has selected too. This happens in two form, the robots selected icon will light up for 2 seconds and turn off again. There will be a little written description of what you picked and what the robot picked and the result of that round.   \
+![Computer Choice](assets/images/computer_choice.png) ![Written Feedback](assets/images/round_outcome.png)
+
+- There is a home button on the top left corner of the header to take you back to the landing page. This also lightly glows as you hover over it staying consistent with the rest of the site.   \
+![Home Button](assets/images/home_button.png)
+
+- I have a fun cursor follower animation for the game page. It adds to the "game feel". I found this cool animation on [CodePen](https://codepen.io/morphed/pen/LZWppE).   \
+![Mouse Follower](assets/images/mousefollower.png)
+
+- The Reset button along with the game result (you win / you lose) text shows up when either the user or the computer reaches 5.   \
+![Reset Button](assets/images/game_result.png)
+
 
 # Technologies Used
 ## Languages Used
