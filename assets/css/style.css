@@ -308,6 +308,9 @@ input[type=text] {
 /*For screens of max size 1200px*/
 
 @media screen and (max-width: 1200px) {
+    #full-game{
+        margin-top: 20%;
+    }
 
     #game-weapons {
         width: 100%;
@@ -330,10 +333,6 @@ input[type=text] {
 /*For screens of max size 810px*/
 
 @media screen and (max-width: 810px) {
-    #full-game{
-        margin-top: 20%;
-    }
-
     h2 {
         padding: 35px 0;
     }
