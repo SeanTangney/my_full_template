@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple game of classic Rock, Paper, Scissors.">
+    <meta name="keywords" content="rock paper scissors, rps, rock-paper-scissors, classic rock paper scissors">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="shortcut icon" href="#">
+
     <title>Rock Paper Scissors</title>
 </head>
 
@@ -18,29 +21,29 @@
         <h1>Rock Paper Scissors</h1>
     </header>
     <div id="full-game">
-    <div id="game-weapons">
-        <i id="h-rock" class="far fa-hand-rock fa-10x"></i>
-        <i id="h-paper" class="far fa-hand-paper fa-10x"></i>
-        <i id="h-scissors" class="far fa-hand-scissors fa-10x"></i>
-    </div>
-
-    <div id="game-rules">
-        <h2>Choose your weapon wisely!<br><span style="color: #E73651">Rock</span> crushes scissors, <span
-                style="color: #41EAD4">Scissors</span> cuts paper,<br>and <span style="color: #FEEA00">Paper</span>
-            covers rock.</h2>
-    </div>
-    <form>
-        <div id="username-input">
-            <label for="username-box"></label>
-            <input id="username-box" type="text" placeholder=" Enter Username" minlength="2" maxlength="6" required>
+        <div id="game-weapons">
+            <i id="h-rock" class="far fa-hand-rock fa-10x" alt="Rock Icon"></i>
+            <i id="h-paper" class="far fa-hand-paper fa-10x" alt="Paper Icon"></i>
+            <i id="h-scissors" class="far fa-hand-scissors fa-10x" alt="Scissors Icon"></i>
         </div>
 
-        <div id="play-button">
-            <input id="lets-play" onclick="displayName()" type="button" value="LETS PLAY!">
+        <div id="game-rules">
+            <h2>Choose your weapon wisely!<br><span style="color: #E73651">Rock</span> crushes scissors, <span
+                    style="color: #41EAD4">Scissors</span> cuts paper,<br>and <span style="color: #FEEA00">Paper</span>
+                covers rock.</h2>
         </div>
-    </form>
-    <script src="assets/js/script.js"></script>
-</div>
+        <form>
+            <div id="username-input">
+                <label for="username-box"></label>
+                <input id="username-box" type="text" placeholder=" Enter Username" minlength="2" maxlength="6" required>
+            </div>
+
+            <div id="play-button">
+                <input id="lets-play" onclick="displayName()" type="button" value="LETS PLAY!">
+            </div>
+        </form>
+        <script src="assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
