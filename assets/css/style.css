@@ -270,12 +270,11 @@ input[type=text]{
     }
     .result-text{
         margin-top: 0;
-        padding-top: 0;
+        padding: 0;
     }
     #rock, #paper, #scissors{
         font-size: 0.8em;
         padding: 15px;
-        margin-top: 25px;
     }
     #comp-r, #comp-p, #comp-s{
         padding: 10px;
