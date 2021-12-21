@@ -11,7 +11,7 @@ body{
     min-height: 90vh;
 
 }
-.full-game{
+#full-game{
     min-height: 80vh;
     margin-top: 4%;
 }
@@ -63,11 +63,11 @@ h1{
 
 
 /*Computer weapons*/
-.computer-weapons > i{
+#computer-weapons > i{
     padding: 20px;
 }
 
-.computer-weapons > div{
+#computer-weapons > div{
     display: inline-block;
     padding:10px 15px;
 } 
@@ -86,11 +86,11 @@ color: slategray;
 
 /*user weapons*/
 
-.game-weapons > i{
+#game-weapons > i{
     padding: 50px;
 }
 
-.game-weapons > div{
+#game-weapons > div{
     display: inline-block;
     padding: 50px;
 }
@@ -204,7 +204,7 @@ input[type=text]{
 
 /*Scoreboard*/
 
-.scoreboard{
+#scoreboard{
     border: 3px solid #eb8493;
     border-radius: 4px;
     margin: 20px auto;
@@ -257,10 +257,10 @@ input[type=text]{
 /*Media queries*/
 
 @media screen and (max-width: 1600px){
-    .full-game{
+    #full-game{
         margin-top: 0;
     }
-    .game-weapons{
+    #game-weapons{
         width: 80%;
         margin: 0 10%;
     }
@@ -293,7 +293,7 @@ input[type=text]{
 
 @media screen and (max-width: 800px){
 
-.game-weapons{
+#game-weapons{
     width: 80%;
     margin: 0 10%;
 }
@@ -323,7 +323,7 @@ input[type=text]{
     h2{
         margin: 40px 10px 20px 10px;
     }
-    .game-weapons{
+    #game-weapons{
         width: 80%;
         margin: 0 10%;
     }
@@ -355,7 +355,7 @@ input[type=text]{
     .result-text{
         margin-top: 5px;
     }
-    .game-weapons{
+    #game-weapons{
         width: 90%;
         margin: 8% 5%;
     }
@@ -382,7 +382,7 @@ input[type=text]{
     #heading{
         font-size: 1.5em;
     }
-    .scoreboard{
+    #scoreboard{
         font-size: 20px;
         margin: 0 auto;
         width: 150px;
@@ -420,7 +420,7 @@ input[type=text]{
     .result-text{
         margin-top: 5px;
     }
-    .game-weapons{
+    #game-weapons{
         width: 90%;
         margin: 5px auto;
     }
@@ -444,7 +444,7 @@ input[type=text]{
         padding: 5px;
         font-size: 0.6em;
     }
-    .scoreboard{
+    #scoreboard{
         font-size: 20px;
         margin: 0 auto;
         width: 125px;
