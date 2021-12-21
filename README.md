@@ -67,7 +67,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 ### Landing Page
 -   Username is required to be able to use the Lets play button. If an no username is inputted by the user they will not be allowed to use the lets play button and be greeted with a red border around the text box showing their error.  \
 ![Username](assets/images/username_entry.png) ![Username Error](assets/images/invalid_username_entry.png)
--   The Lets play button has a hover feature where it inverts its colours. When pressed , if a valid username has been entered this will take you to the game page.
+-   The Lets play button has a hover feature where it inverts its colours. When pressed , if a valid username has been entered this will take you to the game page.   \
 ![Lets Play!](assets/images/lets_play.png)
 ### Game Page
 -   The colorful Rock, Paper and scissors icons on the bottom of the page have a hover effect which will display them as glowing neon icons. I found this great tutorial on [CSS Tricks](https://css-tricks.com/how-to-create-neon-text-with-css/).   \
@@ -91,9 +91,9 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 # Technologies Used
 ## Languages Used
-- HTML5
-- CSS3
-- Javascript
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [Javascript](https://www.javascript.com/)
 
 ## Frameworks, Libraries and Programs Used
 
