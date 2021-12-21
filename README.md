@@ -2,7 +2,7 @@
 
 ## Link to the deployed site
 
-[Link to the deployed site](https://seantangney.github.io/my_full_template/)
+[Link to the deployed site](https://seantangney.github.io/rock_paper_scissors/index.html)
 
 ## Some pictures of the finished site
 ### Landing page
@@ -34,7 +34,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 # Design
 ## Color Scheme
-- The main colors i used were pink, yellow and light blue for the Font Awesome icons. I chose these "Pastel" inspired colours because i knew they would look nice with a text-shadow effect when hovered over them. 
+- The main colors i used were pink, yellow and light blue for the Font Awesome icons. I chose these "Pastel" inspired colours because i knew they would look nice with a text-shadow ( Neon) effect when hovered over them. I used Coolers to help me to generate this color pallette.
 
 
 <img src="https://user-images.githubusercontent.com/11293532/145097353-dbb3764a-cc58-4a0a-96b9-82065371e412.jpg" alt="color-pallete" width="750" height="450">
@@ -56,7 +56,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 # Features
 
 ### Responsive on All Devices - I used am i responsive to check this along with checking on a variety of devices myself.
-![Am I Responsive](assets/images/rps_amIResponsive.png)
+![Am I Responsive](assets/images/am_i_responsive.png)
 
 ## Has interactive features
 ### Landing Page
