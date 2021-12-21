@@ -111,7 +111,11 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 - I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors.  \
 ![W3 Jigsaw Result](assets/images/css_check.png)
 
-- I used Lighthouse in developer tools to test my site. This was the result i got
+- I used [JsHint](https://jshint.com/) to validate my Javascript. After fixing issues i am left with some "unused variables". I have consulted with my tutor and have decided it is best to leave the remaining ones in as i got bugs when i took these ones out. JsHint doesnt always recognise a variable being used.
+
+- I used Lighthouse in developer tools to test my site. This was the result i got for both desktop and mobile   \
+![Lighthouse Report](assets/images/lighthouse_report.png)
+
 
 
 # Further Testing
