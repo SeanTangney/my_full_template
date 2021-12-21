@@ -24,7 +24,7 @@ const scissors = document.getElementById("scissors");
  * Generate random number to to give us a random element from the array,
  * change color of computer wepons to show which one was chosen
  */
-function getComputerChoice(userChoice, computerChoice) {
+function getComputerChoice() {
         const choices = ['rock', 'paper', 'scissors'];
         const randomNumber = Math.floor(Math.random() * 3);
         if (randomNumber == 0) {
@@ -51,7 +51,6 @@ function rockBack() {
     }, 2000);
 }
 
-
 /**
  * This Function executes when you win. It adds 1 to the user score. Displays +1 to the user score on the 
  * scoreboard and logs it to the console.
@@ -68,6 +67,7 @@ function win(userChoice, computerChoice) {
         finish();
     }
 }
+
 /**
  * This function executes when you lose. It adds 1 to the computer score. Displays +1 to the computer score on the 
  * scoreboard and logs it to the console.
@@ -86,7 +86,7 @@ function lose(userChoice, computerChoice) {
 /**
  * This function executes to tell the user that round was a draw
  */
-function draw(userChoice, computerChoice) {
+function draw(userChoice) {
     if (computerScore !== 5 && userScore !== 5) {
         result_text.innerHTML = userChoice + " was chosen by both, DRAW";
     }
@@ -137,9 +137,6 @@ function resetTheGame() {
     }
   
 }
-
-
-
 
 /**
  * 

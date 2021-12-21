@@ -76,7 +76,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 -   The scoreboard updates live to the current score of the game as you play.   \
 ![Scoreboard](assets/images/scoreboard.png)
 
--   When rock paper or scissors is selected, you get feedback on what the computer/robot has selected too. This happens in two form, the robots selected icon will light up for 2 seconds and turn off again. There will be a little written description of what you picked and what the robot picked and the result of that round.   \
+-   When rock paper or scissors is selected, you get feedback on what the computer/robot has selected too. This happens in two forms, the computer's selected icon will light up for 2 seconds and turn off again. There will be a little written description of what you picked and what the computer picked and the result of that round.   \
 ![Computer Choice](assets/images/computer_choice.png) ![Written Feedback](assets/images/round_outcome.png)
 
 - There is a home button on the top left corner of the header to take you back to the landing page. This also lightly glows as you hover over it staying consistent with the rest of the site.   \
@@ -138,7 +138,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 - I have tested the website on Google Chrome, Internet Explorer, Firefox, Safari and Edge.
 - I have tested to make sure the websites navigation is working correctly.
-- The website was tested on Iphone 8, X and 11 pro, Ipad, Macbook Air and Desktop by me.
+- The website was tested on Iphone 8, X and 11 pro, Ipad, Macbook Air and Desktop PC and laptops by me.
 - I used the developer tools on the browser to emulate different devices.
 - I sent the site link to friends and asked them to test it out and play the game so they could let me know any issues they encountered, how the game felt to play and if navigation and ease of use was all okay. This allowed me to get first hand experience on devices which were not available to me.
 
