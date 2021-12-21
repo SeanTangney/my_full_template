@@ -539,6 +539,10 @@ input[type=text] {
     .result-text {
         margin: 20px auto;
     }
+    #lets-play {
+        margin: 15px 0;
+        font-size: 2em;
+    }
 
 }
 
@@ -559,8 +563,8 @@ input[type=text] {
     }
 
     #lets-play {
-        margin: 20px 0;
-        font-size: 2em;
+        margin: 10px 0;
+        font-size: 1.5em;
     }
 }
 
