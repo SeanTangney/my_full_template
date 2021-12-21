@@ -327,9 +327,13 @@ input[type=text] {
     }
 }
 
-/*For screens of max size 800px*/
+/*For screens of max size 810px*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 810px) {
+    #full-game{
+        margin-top: 20%;
+    }
+
     h2 {
         padding: 35px 0;
     }
@@ -446,6 +450,9 @@ input[type=text] {
 /*For screens of max size 500px*/
 
 @media screen and (max-width: 500px) {
+    #full-game{
+        margin-top: 0;
+    }
     h1 {
         font-size: 1.5em;
     }

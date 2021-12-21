@@ -111,7 +111,8 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 - I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors.  \
 ![W3 Jigsaw Result](assets/images/css_check.png)
 
-- I used [JsHint](https://jshint.com/) to validate my Javascript. After fixing issues i am left with some "unused variables". I have consulted with my tutor and have decided it is best to leave the remaining ones in as i got bugs when i took these ones out. JsHint doesnt always recognise a variable being used.
+- I used [JsHint](https://jshint.com/) to validate my Javascript. After fixing issues i am left with some "unused variables". I have consulted with my tutor and have decided it is best to leave the remaining ones in as i got bugs when i took these ones out. JsHint doesnt always recognise a variable being used. These were my only errors on JsHint.   \
+![JsHint Result](assets/images/jshint_result.png)
 
 - I used Lighthouse in developer tools to test my site. This was the result i got for both desktop and mobile   \
 ![Lighthouse Report](assets/images/lighthouse_report.png)
@@ -180,12 +181,12 @@ You should now have a copy of the original repository in your GitHub account.
 
 
 # Features I Would Like To Implement
-- I would like to add levels of difficulty. This would mean Easy is as the game is now. Hard would be adding in Lizard and Spock to the game.
+- I would like to add levels of difficulty. This would mean Easy is as the game is now. Hard would be adding in Lizard and Spock to the game. Another way i could make this game more difficult is analysing a users pattern of choices and getting the computer choice to counter that.
 
 # Credits
 ## Code
 - I used [Stack Overflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/html/default.asp) was used throughout the project to help with syntax issues. 
-- All Code was written by the developer.
+- All Code was written by the developer, Sean Tangney.
 
 ## Content
 - [Coolers](https://coolors.co/) Was used to select the colour scheme i used.
@@ -195,6 +196,7 @@ You should now have a copy of the original repository in your GitHub account.
 
 ## Media
 - All icons used were from [FontAwesome](https://fontawesome.com/)
+- Font was taken from [Google Fonts](https://fonts.google.com/)
 
 # Aknowlegements 
 1. Tutor support at Code Institute for their help and guidance.
