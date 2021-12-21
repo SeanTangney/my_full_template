@@ -105,7 +105,8 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 ## Testing
 - I used [W3C Markup Validator](https://validator.w3.org/) to validate my html. It returned no errors.  \
-![W3C Results](assets/images/html_check.png)
+![W3C Results for index](assets/images/html_check.png)   \
+![W3C Results for gamepage](assets/images/gameHtml_check.png)
 
 - I used [W3 Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_uri) to validate my Css. It returned no errors.  \
 ![W3 Jigsaw Result](assets/images/css_check.png)
@@ -118,7 +119,8 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 - I have tested the website on Google Chrome, Internet Explorer, Firefox, Safari and Edge.
 - I have tested to make sure the websites navigation is working correctly.
 - The website was tested on Iphone 8, X and 11 pro, Ipad, Macbook Air and Desktop by me.
-- I sent the site link to friends and asked them to test it out and play the game so they could let me know any issues they encountered, how the game felt to play and if navigation and ease of use was all okay.
+- I used the developer tools on the browser to emulate different devices.
+- I sent the site link to friends and asked them to test it out and play the game so they could let me know any issues they encountered, how the game felt to play and if navigation and ease of use was all okay. This allowed me to get first hand experience on devices which were not available to me.
 
 # Testing the User Stories from the User Experience (UX) Section
 ## First Time Visitor Goals
@@ -140,9 +142,8 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 # Bugs
 ## Resolved
-
-
-## Unresolved
+- Duplicating the computer choice and scores after first reset. This was due to the fact that i was calling the getComputerChoice function again when i was resetting the game.
+- My remove media query function didnt work for the user weapons. I did however get around this by stopping the scores rising when the scorelimit of 5 is reached. These weapons can still be clicked when the game is over but it wont have any effect on the games results.
 
 
 # Deployment
