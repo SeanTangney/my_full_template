@@ -395,23 +395,25 @@ h2{
     h2{
         font-size: 1em;
         margin-top: 10px;
-        padding-top: 10px;;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 0;
     }
     .result-text{
         margin-top: 5px;
     }
     #game-weapons{
         width: 90%;
-        margin: 8% 5%;
+        margin: 8% 5% 0 5%;
         
     }
     #game-weapons > i{
         padding: 15px;
         margin: auto;
+        font-size: 6em;
     }
     #h-rock, #h-paper, #h-scissors{
         padding: 15px;
-        font-size: 6em;;
     } 
     #lets-play{
         margin: 40px 0;
