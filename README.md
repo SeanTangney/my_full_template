@@ -11,6 +11,10 @@
 ### Game Page
 ![Game page](assets/images/rps_gamePage.png)
 
+### Screenshots from my Iphone 11
+![iosScreenshots](assets/images/ios_screenshot.png) 
+
+
 # User Experience (UX)
 - First time visitor Goals
     - As a first time visitor, I want to instantly understand the purpose of the site.
@@ -51,6 +55,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 
 ### Game Page
 ![gamePageWF](assets/images/gamePageWF.png)
+
 
 
 # Features
