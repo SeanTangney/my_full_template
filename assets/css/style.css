@@ -464,18 +464,22 @@ h2{
     
 }
 
+
+
 /*iPhone 6, 6S, 7 and 8*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     #game-weapons>i {
         font-size: 5em;
     }
-
     #game-weapons {
         margin-top: 5px;
     }
     h1{
         margin-bottom: 10px;
     }
+    #lets-play{
+        margin: 10px 0;
+        font-size: 1.5em;
 }
 @media screen and (max-width: 360px){
     header{
