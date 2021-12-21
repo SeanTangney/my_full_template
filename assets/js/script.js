@@ -95,19 +95,9 @@ function draw(userChoice, computerChoice) {
 
 /**
  * Function to display the reset button once the winner reaches 5.
- * Event listeners are removed from user weapons.
+ * 
  */
 function finish() {
-    computerChoice = "";
-    rock_div.removeEventListener('click', function () {
-        game("rock");
-    });
-    paper_div.removeEventListener('click', function () {
-        game("paper");
-    });
-    scissors_div.removeEventListener('click', function () {
-        game("scissors");
-    });
 
     let aim = document.getElementById("aim");
     if(aim){

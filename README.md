@@ -74,7 +74,7 @@ Rock Paper Scissors is a classic game and this site is made for everyone, to hav
 - There is a home button on the top left corner of the header to take you back to the landing page. This also lightly glows as you hover over it staying consistent with the rest of the site.
 - I have a fun cursor follower animation for the game page. It adds to the "game feel". I found this cool animation on [CodePen](https://codepen.io/morphed/pen/LZWppE).
 
-# Technolies Used
+# Technologies Used
 ## Languages Used
 - HTML5
 - CSS3
