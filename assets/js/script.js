@@ -112,17 +112,23 @@ function finish() {
     });
 
     let aim = document.getElementById("aim");
+    if(aim){
+        aim.style.display = "none";
+    }
+    
     let reset = document.getElementById("reset");
+    if(reset){
+        reset.style.display = "inline-block";
+    }
 
-    aim.style.display = "none";
-    reset.style.display = "inline-block";
-   
 }
 
 /**
  * Reset everything to default before user starts again.
  */
+if (gameReset){
 gameReset.addEventListener("click", resetTheGame);
+}
 
 function resetTheGame() {
   computerChoice = "";
@@ -130,9 +136,18 @@ function resetTheGame() {
   computerScore = 0;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  aim.style.display = "inline-block";
-  reset.style.display = "none";
   result_text.innerHTML = "Choose your weapon below to begin!";
+
+  let aim = document.getElementById("aim");
+    if(aim){
+        aim.style.display = "inline-block";
+    }
+    
+    let reset = document.getElementById("reset");
+    if(reset){
+        reset.style.display = "none";
+    }
+  
 }
 
 
